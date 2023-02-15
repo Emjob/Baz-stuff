@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Buttons
+    uniqueID: 1347649857
+    locked: 0
   - name: TileLayer1
     uniqueID: 596037915
     locked: 0
