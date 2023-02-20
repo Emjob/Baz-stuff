@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57cf3d5ae577cdc4ab47b2e1163a5ac8
+guid: 27268b6ab3e80cf459d829aaa1427925
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -114,11 +114,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,11 +126,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PrototypeTiles2_0
+      name: DungeonTiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c568bc8485d4ca4bb72781a62715f9d
-      internalID: -1029193473
+      spriteID: fba5795d75cc1684ebf20cff9cde7665
+      internalID: 1720428651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_1
+      name: DungeonTiles_1
       rect:
         serializedVersion: 2
         x: 32
@@ -176,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d57318aeca775574786f9e05340806a7
-      internalID: -1848165923
+      spriteID: f4a9af0c0859ccc48af98b17e571a859
+      internalID: 1904550429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_2
+      name: DungeonTiles_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0137b2743312eac4797719216c5bee51
-      internalID: -958482026
+      spriteID: 2163742f4d9b3334f889559b4cf7f60b
+      internalID: 1606517201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_3
+      name: DungeonTiles_3
       rect:
         serializedVersion: 2
         x: 96
@@ -218,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91c36924335f82a4d9c521d33f1dda97
-      internalID: 401606132
+      spriteID: 97259d0de577de142872e392405d5eb8
+      internalID: 1516279837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_4
+      name: DungeonTiles_4
       rect:
         serializedVersion: 2
         x: 128
@@ -239,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eddc02daed3b6ea428aabf6aaf999534
-      internalID: 683504904
+      spriteID: 1f2bf4df65ff7a84fa887eb707ae79c5
+      internalID: 2038618032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_5
+      name: DungeonTiles_5
       rect:
         serializedVersion: 2
         x: 0
@@ -260,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ca2428e13ac3f449984f846de55ff75
-      internalID: -684242731
+      spriteID: d20ebc7630f98b2408ba694aaa6529b3
+      internalID: -135464336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_6
+      name: DungeonTiles_6
       rect:
         serializedVersion: 2
         x: 32
@@ -281,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f987407bab5f204cbd4e28c0318ceb3
-      internalID: 2037242041
+      spriteID: 352a623ee60a9af41a1a95af46acb324
+      internalID: 172954800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_7
+      name: DungeonTiles_7
       rect:
         serializedVersion: 2
         x: 64
@@ -302,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7616019f276ce684e9954428b054bbf8
-      internalID: -426006620
+      spriteID: 8c7bf171673b8504eab74d06a10fdbce
+      internalID: 117043538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_8
+      name: DungeonTiles_8
       rect:
         serializedVersion: 2
         x: 96
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc70fc1cb2bfa8449a7eaa34ee6bee5c
-      internalID: -228605767
+      spriteID: 2e68c50f4ea32f64a8470ecb73c08802
+      internalID: -1889101781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_9
+      name: DungeonTiles_9
       rect:
         serializedVersion: 2
         x: 128
@@ -344,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07bd09c35664a134a9f119a88b7079c8
-      internalID: 1750365815
+      spriteID: 568709f4484579f46b6b7fb89667cef3
+      internalID: 175982082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_10
+      name: DungeonTiles_10
       rect:
         serializedVersion: 2
         x: 0
@@ -365,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee299f5b5bc5674c82c8c3967388937
-      internalID: 1412023154
+      spriteID: 5e2bd723be1489b4792fb91ab69ea7c7
+      internalID: 447761466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_11
+      name: DungeonTiles_11
       rect:
         serializedVersion: 2
         x: 32
@@ -386,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fd209a9803fc504c86452e2b242a406
-      internalID: 1211900935
+      spriteID: 8b27fe3e97201f84da551aa0897f3908
+      internalID: -256859112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_12
+      name: DungeonTiles_12
       rect:
         serializedVersion: 2
         x: 64
@@ -407,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 405f6b35088b85845a491abbb06fd72e
-      internalID: 1505134598
+      spriteID: 5c7469affa1b7b14d8b44a69d6f28984
+      internalID: 1017900530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_13
+      name: DungeonTiles_13
       rect:
         serializedVersion: 2
         x: 96
@@ -428,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69228bbc018739d4ea7eb97714e6fabb
-      internalID: 760909561
+      spriteID: 3dc7367584333d844b4eafbcd93216b5
+      internalID: 841502086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_14
+      name: DungeonTiles_14
       rect:
         serializedVersion: 2
         x: 128
@@ -449,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5127c2a2e8d4ab4ba2dfc9cac0a4a5b
-      internalID: 411379584
+      spriteID: b01fe9d08408d99469da671661ffcfaf
+      internalID: 1110012095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_15
+      name: DungeonTiles_15
       rect:
         serializedVersion: 2
         x: 0
@@ -470,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc09e26a8198d24fa590acf648cce8c
-      internalID: 2086173385
+      spriteID: 7bd442f175440454d92a5e7581b4f233
+      internalID: 256535845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_16
+      name: DungeonTiles_16
       rect:
         serializedVersion: 2
         x: 32
@@ -491,14 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 775213d82ac330844a6177a7227d0cf4
-      internalID: 813457119
+      spriteID: c9f801fbdce71094697e9a40442a3750
+      internalID: -1587074629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_17
+      name: DungeonTiles_17
       rect:
         serializedVersion: 2
         x: 64
@@ -512,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcc8fb2c626a95342be311f57b4a1d43
-      internalID: -983710324
+      spriteID: 9175564468e463146a23a93d99b704c1
+      internalID: -608553132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_18
+      name: DungeonTiles_18
       rect:
         serializedVersion: 2
         x: 96
@@ -533,14 +533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778901d8a338f384eba82e7e361b75a9
-      internalID: 1638073348
+      spriteID: 99ab16de19581494ba81410125cb0bbc
+      internalID: -1972258191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrototypeTiles2_19
+      name: DungeonTiles_19
       rect:
         serializedVersion: 2
         x: 128
@@ -554,8 +554,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48aa382d88ac78b459383b7cbd12ae38
-      internalID: -728410466
+      spriteID: 41b1d486ee55c9847964bebc5f0b6389
+      internalID: -1103153020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DungeonTiles_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c0b3748dc1b694baff163d89bdd902
+      internalID: -493020453
       vertices: []
       indices: 
       edges: []
@@ -571,26 +592,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PrototypeTiles2_11: 1211900935
-      PrototypeTiles2_7: -426006620
-      PrototypeTiles2_13: 760909561
-      PrototypeTiles2_9: 1750365815
-      PrototypeTiles2_14: 411379584
-      PrototypeTiles2_2: -958482026
-      PrototypeTiles2_4: 683504904
-      PrototypeTiles2_10: 1412023154
-      PrototypeTiles2_16: 813457119
-      PrototypeTiles2_17: -983710324
-      PrototypeTiles2_12: 1505134598
-      PrototypeTiles2_3: 401606132
-      PrototypeTiles2_19: -728410466
-      PrototypeTiles2_18: 1638073348
-      PrototypeTiles2_8: -228605767
-      PrototypeTiles2_5: -684242731
-      PrototypeTiles2_6: 2037242041
-      PrototypeTiles2_1: -1848165923
-      PrototypeTiles2_15: 2086173385
-      PrototypeTiles2_0: -1029193473
+      DungeonTiles_19: -1103153020
+      DungeonTiles_16: -1587074629
+      DungeonTiles_9: 175982082
+      DungeonTiles_10: 447761466
+      DungeonTiles_12: 1017900530
+      DungeonTiles_14: 1110012095
+      DungeonTiles_17: -608553132
+      DungeonTiles_1: 1904550429
+      DungeonTiles_6: 172954800
+      DungeonTiles_20: -493020453
+      DungeonTiles_7: 117043538
+      DungeonTiles_13: 841502086
+      DungeonTiles_3: 1516279837
+      DungeonTiles_2: 1606517201
+      DungeonTiles_18: -1972258191
+      DungeonTiles_15: 256535845
+      DungeonTiles_5: -135464336
+      DungeonTiles_0: 1720428651
+      DungeonTiles_4: 2038618032
+      DungeonTiles_8: -1889101781
+      DungeonTiles_11: -256859112
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
