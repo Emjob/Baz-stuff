@@ -11,12 +11,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Water_Element
+  - Fire_Element
+  - Ice_Element
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: TileLayer1
     uniqueID: 596037915
+    locked: 0
+  - name: Player
+    uniqueID: 1559197037
     locked: 0
