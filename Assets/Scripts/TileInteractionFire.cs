@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TileInteractionFire : MonoBehaviour
 {
+    public GameObject water;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,7 @@ public class TileInteractionFire : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Water"))
         {
@@ -24,7 +26,10 @@ public class TileInteractionFire : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Ice"))
         {
+            Instantiate(water,collision.transform.position,Quaternion.identity);
+            Debug.Log("help");
             Destroy(collision.gameObject);
+
         }
     }
 }
