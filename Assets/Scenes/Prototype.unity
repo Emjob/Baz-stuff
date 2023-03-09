@@ -6336,8 +6336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48649363f5cc4024bb40dbcf10c87b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterPrefab: {fileID: 1345160831580439031, guid: 155545c2ae43692448be48ffebd5cebb, type: 3}
-  speed: 2
+  characterPrefab: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+  speed: 1
 --- !u!212 &855957050
 SpriteRenderer:
   m_ObjectHideFlags: 0
