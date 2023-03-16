@@ -17,7 +17,7 @@ TagManager:
   - Water_Element
   - Fire_Element
   - Ice_Element
-  - 
+  - TileLayer
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1559197037
+    locked: 0
+  - name: Walls
+    uniqueID: 3965839451
     locked: 0

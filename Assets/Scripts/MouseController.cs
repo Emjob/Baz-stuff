@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
+    public Vector3Int spawnGrid;
+    public LayerMask TileLayer;
     public GameObject characterPrefab;
     private CharacterInfo character;
     public float speed;
@@ -23,6 +25,14 @@ public class MouseController : MonoBehaviour
     private void LateUpdate()
     {
         RaycastHit2D? hit = GetFocusedOnTile();
+
+        if (character == null)
+        {
+            character = GameObject.FindWithTag("Player").GetComponent<CharacterInfo>();
+            OverlayTile spawnTile = GameObject.Find("OverlayTile(Clone)").GetComponent<OverlayTile>();
+            spawnTile.gridLocation = spawnGrid;
+            character.activeTile = spawnTile;
+        }
 
         if (hit.HasValue)
         {
@@ -73,7 +83,7 @@ public class MouseController : MonoBehaviour
     private void PositionCharacterOnTile(OverlayTile tile)
     {
         character.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y + 0.0001f, tile.transform.position.z);
-        character.GetComponent<SpriteRenderer>().sortingOrder = tile.GetComponent<SpriteRenderer>().sortingOrder;
+        character.GetComponentInChildren<SpriteRenderer>().sortingOrder = tile.GetComponent<SpriteRenderer>().sortingOrder;
         character.activeTile = tile;
     }
 
@@ -82,7 +92,7 @@ public class MouseController : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePos2d = new Vector2(mousePos.x, mousePos.y);
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos2d, Vector2.zero);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos2d, Vector2.zero, 10000f, TileLayer);
 
         if(hits.Length > 0)
         {

@@ -46,7 +46,7 @@ public class MapManager : MonoBehaviour
                         var overlayTile = Instantiate(overlayTilePrefab, overlayContainer.transform);
                         var cellWorldPosition = tileMap.GetCellCenterWorld(tileLocation);
 
-                        overlayTile.transform.position = new Vector3(cellWorldPosition.x, cellWorldPosition.y, cellWorldPosition.z + 1);
+                        overlayTile.transform.position = new Vector3(cellWorldPosition.x, cellWorldPosition.y - 0.09f, cellWorldPosition.z + 1);
                         overlayTile.GetComponent<SpriteRenderer>().sortingOrder = tileMap.GetComponent<TilemapRenderer>().sortingOrder + 1;
                         overlayTile.gridLocation = tileLocation;
                         map.Add(tileKey, overlayTile);
