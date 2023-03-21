@@ -13934,6 +13934,8 @@ MonoBehaviour:
   overlayTilePrefab: {fileID: 6788223157852983997, guid: cd46ba99714f601439026ce2f4fcb2ee, type: 3}
   overlayContainer: {fileID: 1146219467}
   tileMap: {fileID: 212760709}
+  tileMap1: {fileID: 0}
+  activateTilemap: 0
 --- !u!1001 &875575880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16655,6 +16657,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4823127100963307531, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823127100963307531, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823127100963307531, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: m_Name
       value: Player
