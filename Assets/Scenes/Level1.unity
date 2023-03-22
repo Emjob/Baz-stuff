@@ -3846,16 +3846,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 5, y: -12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 6, y: -12, z: 0}
     second:
       serializedVersion: 2
@@ -3964,7 +3954,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 31
     m_Data: {fileID: 11400000, guid: 8fa922c10a6b4614193d2a3fc6bcc16e, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: ea9b677e08c219d43a454060e3df48cf, type: 2}
   - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 9a0212945e6dea94bb1438c52e0edf2c, type: 2}
@@ -3979,7 +3969,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 31
     m_Data: {fileID: 175982082, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: -1889101781, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: 1720428651, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
@@ -3988,7 +3978,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 2038618032, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 70
+  - m_RefCount: 69
     m_Data:
       e00: 1
       e01: 0
@@ -4007,7 +3997,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 70
+  - m_RefCount: 69
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5783,7 +5773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpOBJ:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   cursor: {fileID: 876265771}
 --- !u!114 &742164691
 MonoBehaviour:
@@ -6243,7 +6233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1179037084
 Transform:
   m_ObjectHideFlags: 0
