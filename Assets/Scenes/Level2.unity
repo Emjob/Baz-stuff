@@ -598,6 +598,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 2, y: -16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 3, y: -16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 6
@@ -606,8 +626,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: ea9b677e08c219d43a454060e3df48cf, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 6
     m_Data: {fileID: 2038618032, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
@@ -615,10 +635,10 @@ Tilemap:
     m_Data: {fileID: 1266720922, guid: 9ee628d900fc0d949b88d8335c71e44a, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: -1889101781, guid: 27268b6ab3e80cf459d829aaa1427925, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 24
+  - m_RefCount: 26
     m_Data:
       e00: 1
       e01: 0
@@ -637,7 +657,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 24
+  - m_RefCount: 26
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -673,9 +693,10 @@ GameObject:
   m_Component:
   - component: {fileID: 157615144}
   - component: {fileID: 157615145}
-  m_Layer: 0
+  - component: {fileID: 157615146}
+  m_Layer: 7
   m_Name: Collider (1)
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -705,7 +726,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -725,6 +746,18 @@ PolygonCollider2D:
       - {x: -0.46644872, y: -0.20808303}
       - {x: 0.12540233, y: -0.5148854}
       - {x: 1.1125197, y: -0.016677797}
+--- !u!114 &157615146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157615143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &212760706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,10 +4598,10 @@ GameObject:
   m_Component:
   - component: {fileID: 344584224}
   - component: {fileID: 344584226}
-  - component: {fileID: 344584225}
-  m_Layer: 0
+  - component: {fileID: 344584227}
+  m_Layer: 7
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4588,18 +4621,6 @@ Transform:
   m_Father: {fileID: 2024281099}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &344584225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344584223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ca5a8b691169fc45a564a94cf648b52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &344584226
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4610,7 +4631,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4630,6 +4651,18 @@ PolygonCollider2D:
       - {x: -0.33754224, y: -0.036207795}
       - {x: 0.083619475, y: -0.27909088}
       - {x: 0.6640129, y: -0.0001065135}
+--- !u!114 &344584227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344584223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &351283645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4797,9 +4830,10 @@ GameObject:
   - component: {fileID: 435444526}
   - component: {fileID: 435444528}
   - component: {fileID: 435444527}
-  m_Layer: 0
+  - component: {fileID: 435444529}
+  m_Layer: 7
   m_Name: Lava
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5022,7 +5056,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5319,12 +5353,12 @@ Tilemap:
   - m_RefCount: 42
     m_Data: {fileID: 11400000, guid: 9fa98b1ab5a185049956907ba595a026, type: 2}
   m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 223063113, guid: 488b4ad3d4493cc47979d9e92b35b651, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 42
     m_Data: {fileID: -95403243, guid: 488b4ad3d4493cc47979d9e92b35b651, type: 3}
   m_TileMatrixArray:
@@ -5373,6 +5407,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &435444529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435444525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &455134174
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,7 +5492,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 596037915
   m_SortingLayer: 2
-  m_SortingOrder: 20
+  m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -16882,6 +16928,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2024281098}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2024281098}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2010191485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16963,9 +17033,9 @@ GameObject:
   - component: {fileID: 2024281099}
   - component: {fileID: 2024281101}
   - component: {fileID: 2024281100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lava (1)
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
