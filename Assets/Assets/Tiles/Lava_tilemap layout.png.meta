@@ -569,11 +569,13 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 54b32809f1b2db546be9cd7e6a297352, type: 3}
+      name: _NormalMap
     nameFileIdTable:
       Lava_tilemap layout_14: 946538204
       Lava_tilemap layout_1: 223063113
-      Lava_tilemap layout_2: -1607043419
+      Lava_tilemap layout_19: 309306891
       Lava_tilemap layout_11: -1579438306
       Lava_tilemap layout_16: -1342267344
       Lava_tilemap layout_0: -528834582
@@ -590,7 +592,7 @@ TextureImporter:
       Lava_tilemap layout_5: -243544807
       Lava_tilemap layout_3: -1563776581
       Lava_tilemap layout_13: -95403243
-      Lava_tilemap layout_19: 309306891
+      Lava_tilemap layout_2: -1607043419
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
