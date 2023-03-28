@@ -5680,6 +5680,10 @@ PrefabInstance:
       value: Cursor
       objectReference: {fileID: 0}
     - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: spawnGrid.x
       value: 2
       objectReference: {fileID: 0}
@@ -5700,6 +5704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 742164686, guid: a1c5e70c4e52053488bde00b799246a5, type: 3}
+      propertyPath: time
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 742164686, guid: a1c5e70c4e52053488bde00b799246a5, type: 3}
       propertyPath: cursor
       value: 
