@@ -9,8 +9,8 @@ public class MainMenuUI : MonoBehaviour
     public Button exitButton;
     public Slider volumeSlider;
 
-    public float speed = 50f; // The speed at which the buttons move
-    public float amplitude = 10f; // The maximum distance the buttons move from their starting position
+    public float speed = 25f; // The speed at which the buttons move
+    public float amplitude = 5f; // The maximum distance the buttons move from their starting position
     public float frequency = 1f; // The frequency of the buttons' movement
 
     private Vector3[] startingPositions; // The starting position of each button
