@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6077417321234339535}
   m_Layer: 0
   m_Name: Cursor
-  m_TagString: Untagged
+  m_TagString: Cursor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,5 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48649363f5cc4024bb40dbcf10c87b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnGrid: {x: 2, y: -8, z: 0}
+  TileLayer:
+    serializedVersion: 2
+    m_Bits: 512
   characterPrefab: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
   speed: 1

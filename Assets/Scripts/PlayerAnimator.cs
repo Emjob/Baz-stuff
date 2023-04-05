@@ -17,37 +17,40 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        xPos = transform.position.x;
-        yPos = transform.position.y;
-        
-
-        if (xPos > lastXPos)
+        if (animator.isActiveAndEnabled)
         {
-            animator.SetFloat("SlimeX", 1);
-        }
-        if (yPos > lastYPos)
-        {
-            animator.SetFloat("SlimeY", 1);
-        }
-        if (xPos < lastXPos)
-        {
-            animator.SetFloat("SlimeX", -1);
-        }
-        if (yPos < lastYPos)
-        {
-            animator.SetFloat("SlimeY", -1);
-        }
-        if(xPos != lastXPos || yPos != lastYPos)
-        {
-            animator.SetBool("isRunning", true);
-        }
-        else 
-        { 
-            animator.SetBool("isRunning", false);
-        }
+            xPos = transform.position.x;
+            yPos = transform.position.y;
 
 
-        lastXPos = transform.position.x;
-        lastYPos = transform.position.y;
+            if (xPos > lastXPos)
+            {
+                animator.SetFloat("SlimeX", 1);
+            }
+            if (yPos > lastYPos)
+            {
+                animator.SetFloat("SlimeY", 1);
+            }
+            if (xPos < lastXPos)
+            {
+                animator.SetFloat("SlimeX", -1);
+            }
+            if (yPos < lastYPos)
+            {
+                animator.SetFloat("SlimeY", -1);
+            }
+            if (xPos != lastXPos || yPos != lastYPos)
+            {
+                animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                animator.SetBool("isRunning", false);
+            }
+
+
+            lastXPos = transform.position.x;
+            lastYPos = transform.position.y;
+        }
     }
 }

@@ -40,7 +40,7 @@ public class MouseController : MonoBehaviour
             transform.position = overlayTile.transform.position;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = overlayTile.GetComponent<SpriteRenderer>().sortingOrder;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && character.rb.constraints == RigidbodyConstraints2D.FreezeAll)
             {
                 overlayTile.ShowTile();
                 if (character == null)
@@ -78,6 +78,11 @@ public class MouseController : MonoBehaviour
             PositionCharacterOnTile(path[0]);
             path.RemoveAt(0);
         }
+    }
+
+    public void StopMovement()
+    {
+        path = new List<OverlayTile>();
     }
 
     private void PositionCharacterOnTile(OverlayTile tile)

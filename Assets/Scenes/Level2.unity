@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 157615144}
   - component: {fileID: 157615145}
   - component: {fileID: 157615146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider (1)
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -4961,7 +4961,7 @@ GameObject:
   - component: {fileID: 435444527}
   - component: {fileID: 435444530}
   - component: {fileID: 435444529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lava
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -9687,18 +9687,6 @@ PrefabInstance:
     - target: {fileID: 6077417321234339534, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: m_Name
       value: Cursor
-      objectReference: {fileID: 0}
-    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
-      propertyPath: spawnGrid.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
-      propertyPath: spawnGrid.y
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
-      propertyPath: TileLayer.m_Bits
-      value: 512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
@@ -14587,18 +14575,6 @@ PrefabInstance:
     - target: {fileID: 8949339420437473583, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8949339420694897060, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8949339420694897060, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
-      propertyPath: m_SortingOrder
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 8949339420694897060, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 596037915
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251781f3ca272744d8ccf427c794d687, type: 3}

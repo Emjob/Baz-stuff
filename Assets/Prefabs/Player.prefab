@@ -49,6 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeTile: {fileID: 0}
+  rb: {fileID: 0}
+  lives: 3
+  knockbackMultiplier: 50
+  time: 0.1
 --- !u!60 &6485642722455082467
 PolygonCollider2D:
   m_ObjectHideFlags: 0
