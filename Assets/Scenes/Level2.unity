@@ -18418,38 +18418,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 841428458372907902, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
   m_PrefabInstance: {fileID: 2101004539}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3122236915151082170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6419685209119021792, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
-  m_PrefabInstance: {fileID: 8233464408902158426}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5441579598638310710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3122236915151082170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d448d6f6db786e4bb286c2a61486bf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 224787037}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1001 &8233464408902158426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18457,6 +18425,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224787037}
     - target: {fileID: 6419685209119021792, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: m_Name
       value: GoalUI
