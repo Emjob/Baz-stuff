@@ -9,6 +9,8 @@ TagManager:
   - Ice
   - Ground
   - Cursor
+  - Steel
+  - Grass
   layers:
   - Default
   - TransparentFX
