@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7066131110084473536}
   m_Layer: 0
   m_Name: WaterOBJ
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4094888287316411159}
   - component: {fileID: 4094888287316411158}
+  - component: {fileID: 2417354012903610974}
   m_Layer: 0
   m_Name: Water_layout_0
   m_TagString: Untagged
@@ -225,7 +226,7 @@ SpriteRenderer:
   m_SortingLayerID: 596037915
   m_SortingLayer: 2
   m_SortingOrder: 37
-  m_Sprite: {fileID: 1315060825, guid: 9ee628d900fc0d949b88d8335c71e44a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa5e428d01c6eef45bc7d7dfbd1c007b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -236,3 +237,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2417354012903610974
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094888287316411152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afc919ca2601dbf40b930729507f463c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
