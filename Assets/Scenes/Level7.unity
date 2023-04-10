@@ -8001,6 +8001,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6274072377107442488, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.272
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274072377107442488, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.526
+      objectReference: {fileID: 0}
     - target: {fileID: 7641890105828825791, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
       propertyPath: m_Name
       value: Ice_Obj

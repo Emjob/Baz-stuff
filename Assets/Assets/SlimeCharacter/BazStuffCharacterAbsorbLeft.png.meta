@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd299061816dfea438086b9fbe5ebed8
+guid: 62ac57f4425bd494e966ddef2c668405
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,421 +141,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice tilemap_Layout_0
+      name: BazStuffCharacterAbsorbLeft_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe707991004f59c42b69bd3dffe40b73
-      internalID: 1843596942
+      spriteID: eed0d753727bb584b8956a346d2ac048
+      internalID: -1223049944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_1
+      name: BazStuffCharacterAbsorbLeft_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93497cd4998d56b41a8e0f3cd067bc62
-      internalID: -54745852
+      spriteID: c50a8b734d5f10145a9f06ab358ecf78
+      internalID: -116904630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_2
+      name: BazStuffCharacterAbsorbLeft_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8abf5bf0b95cfd46922857a17a21e3b
-      internalID: 1360444358
+      spriteID: 6002bfe5bfaca6c47ac16f5d945fdf76
+      internalID: 1625341015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_3
+      name: BazStuffCharacterAbsorbLeft_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 128
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4023065cdf18ea42b82d0a079f50394
-      internalID: -1157555149
+      spriteID: 6a49dc3a6d608a442bb0b959a3649c51
+      internalID: -701584424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_4
+      name: BazStuffCharacterAbsorbLeft_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dba20b106b9fc149b2b8c61d0aeab40
-      internalID: -1354831309
+      spriteID: dfebce88f1b13764a99c2ac6e551221b
+      internalID: 1849128538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_5
+      name: BazStuffCharacterAbsorbLeft_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 160
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b0f908c4bb356943bfa3a46e338086e
-      internalID: -1543601794
+      spriteID: 3870e47671c4dde47a88d105d8cd96bc
+      internalID: 73956838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_6
+      name: BazStuffCharacterAbsorbLeft_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 192
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c2e387b422a0544b82776fd521e893
-      internalID: 21508368
+      spriteID: 1d1a4416e583f9842a2c61efb6cf7302
+      internalID: 1281903978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_7
+      name: BazStuffCharacterAbsorbLeft_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 224
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f967dc93092f354f94bb1dc9e39c2dd
-      internalID: -614751743
+      spriteID: a7ac8df6bbbf5e94f8c013dd1f4d7bf7
+      internalID: -1056021693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_8
+      name: BazStuffCharacterAbsorbLeft_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 256
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a26acf6499d637042838a2066af23c53
-      internalID: 253556351
+      spriteID: 6ffde5ec3d1838e48bf27cd66421fe15
+      internalID: 512610811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_9
+      name: BazStuffCharacterAbsorbLeft_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 288
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa644ff7f1823f043b6135e6bad05ef0
-      internalID: 415517656
+      spriteID: 3fefa03f397fd424f810cb6e4488d843
+      internalID: -789188485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_10
+      name: BazStuffCharacterAbsorbLeft_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 320
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b19ef513f042644a5b3864170485e7
-      internalID: 1703292703
+      spriteID: 6c4ef1b9703ca034ab68c380e1c7ee6d
+      internalID: -547853923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ice tilemap_Layout_11
+      name: BazStuffCharacterAbsorbLeft_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 352
+        y: 0
         width: 32
-        height: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0048b813b4249e84c950ab4c8b2921eb
-      internalID: -1676951409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_12
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea65fb82afc38b24a98cfa20b4a0b8e4
-      internalID: -672319963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_13
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 971b3a04c888d1749acc181f31ab6900
-      internalID: -440410593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_14
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55b9061fb9bd4de438c11b6d52f6d911
-      internalID: -1572250392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b7cb8af59cf15444b93d6dfe705e0fa
-      internalID: 737502411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d52c46f6e06284ea44418b493f4b1b
-      internalID: 286612965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c25257e2ea33a314b81ef7820fd9fba7
-      internalID: 362435613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_18
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bad798bde5a383419afebf5d06cddc0
-      internalID: -1250784551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ice tilemap_Layout_19
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dadb7540514d9544fba7c98898124404
-      internalID: -1767752706
+      spriteID: 4681e8d2ffff4c944a14775f84e9ad71
+      internalID: -65597049
       vertices: []
       indices: 
       edges: []
@@ -569,30 +401,20 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: e6c8d8fc9b7cbab45b1fb358c2076e48, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
     nameFileIdTable:
-      Ice tilemap_Layout_14: -1572250392
-      Ice tilemap_Layout_7: -614751743
-      Ice tilemap_Layout_3: -1157555149
-      Ice tilemap_Layout_1: -54745852
-      Ice tilemap_Layout_10: 1703292703
-      Ice tilemap_Layout_5: -1543601794
-      Ice tilemap_Layout_11: -1676951409
-      Ice tilemap_Layout_9: 415517656
-      Ice tilemap_Layout_19: -1767752706
-      Ice tilemap_Layout_12: -672319963
-      Ice tilemap_Layout_15: 737502411
-      Ice tilemap_Layout_6: 21508368
-      Ice tilemap_Layout_4: -1354831309
-      Ice tilemap_Layout_18: -1250784551
-      Ice tilemap_Layout_8: 253556351
-      Ice tilemap_Layout_13: -440410593
-      Ice tilemap_Layout_17: 362435613
-      Ice tilemap_Layout_2: 1360444358
-      Ice tilemap_Layout_16: 286612965
-      Ice tilemap_Layout_0: 1843596942
+      BazStuffCharacterAbsorbLeft_8: 512610811
+      BazStuffCharacterAbsorbLeft_5: 73956838
+      BazStuffCharacterAbsorbLeft_2: 1625341015
+      BazStuffCharacterAbsorbLeft_1: -116904630
+      BazStuffCharacterAbsorbLeft_7: -1056021693
+      BazStuffCharacterAbsorbLeft_3: -701584424
+      BazStuffCharacterAbsorbLeft_10: -547853923
+      BazStuffCharacterAbsorbLeft_6: 1281903978
+      BazStuffCharacterAbsorbLeft_4: 1849128538
+      BazStuffCharacterAbsorbLeft_11: -65597049
+      BazStuffCharacterAbsorbLeft_9: -789188485
+      BazStuffCharacterAbsorbLeft_0: -1223049944
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 596037915
   m_SortingLayer: 2
   m_SortingOrder: 30
-  m_Sprite: {fileID: 2130340908, guid: 5ea7fab6a12a8854c983020640d0be7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5d16a074d8b2c74f9985824e67a1d13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7897710492657810131}
   - component: {fileID: 3002196212378172085}
   - component: {fileID: 4582865566647653937}
+  - component: {fileID: 5863695750941314583}
   m_Layer: 0
   m_Name: GrassOBJ
   m_TagString: Untagged
@@ -113,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7013939057330505729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8369002, y: -1.2763, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -236,3 +237,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5863695750941314583
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013939057330505729}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33c7ce26942b96840b9b69d829f4149f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
