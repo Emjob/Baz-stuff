@@ -1121,7 +1121,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_Origin: {x: -14, y: -27, z: 0}
   m_Size: {x: 30, y: 47, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -7113,7 +7113,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7128,11 +7128,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.39999998, y: 1.3199999}
-      - {x: -0.7412678, y: 0.49082032}
-      - {x: -0.3053422, y: -0.8508204}
-      - {x: 1.1053424, y: -0.8508203}
-      - {x: 1.5412676, y: 0.4908205}
+    - - {x: 0.14080143, y: 0.73780024}
+      - {x: -0.22287071, y: 0.5825367}
+      - {x: 0.54004383, y: 0.19793665}
+      - {x: 1.2090218, y: -0.12107676}
+      - {x: 1.5412676, y: 0.052176833}
 --- !u!1001 &1497829464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7534,6 +7534,7 @@ GameObject:
   - component: {fileID: 1759406191}
   - component: {fileID: 1759406193}
   - component: {fileID: 1759406192}
+  - component: {fileID: 1759406194}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -8507,6 +8508,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!60 &1759406194
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759406190}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.2598279, y: 1.1237538}
+      - {x: 1.6529078, y: 0.83714205}
+      - {x: 2.739353, y: 0.2354306}
+      - {x: 0.59736705, y: -0.8563975}
+      - {x: 1.0919746, y: -1.1342195}
+      - {x: 3.7957156, y: 0.32490766}
 --- !u!1001 &1827893129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9177,7 +9209,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9346,8 +9378,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 596037915
-  m_SortingLayer: 2
+  m_SortingLayerID: -329127845
+  m_SortingLayer: 4
   m_SortingOrder: 67
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -10729,7 +10761,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_Origin: {x: -14, y: -27, z: 0}
   m_Size: {x: 29, y: 46, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
