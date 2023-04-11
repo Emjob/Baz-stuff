@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7013939057107110130}
   - component: {fileID: 7013939057107110131}
+  - component: {fileID: 1255230075}
   m_Layer: 0
   m_Name: Grass_Tilemap_0
   m_TagString: Untagged
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1255230075
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013939057107110141}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e549ee62244c4e74c9c1ddf759218977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7013939057330505729
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,10 +119,9 @@ GameObject:
   - component: {fileID: 7897710492657810131}
   - component: {fileID: 3002196212378172085}
   - component: {fileID: 4582865566647653937}
-  - component: {fileID: 5863695750941314583}
   m_Layer: 0
   m_Name: GrassOBJ
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,23 +257,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &5863695750941314583
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7013939057330505729}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 33c7ce26942b96840b9b69d829f4149f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0

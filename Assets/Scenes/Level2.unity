@@ -9502,7 +9502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6077417321234339533, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6077417321234339533, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9606,7 +9606,7 @@ Transform:
   - {fileID: 1762803776}
   - {fileID: 1249943825}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584251848
 GameObject:
@@ -14532,6 +14532,10 @@ PrefabInstance:
       value: Light 2D Medium (16)
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
       value: 0.41485605
       objectReference: {fileID: 0}
@@ -14678,6 +14682,10 @@ PrefabInstance:
     - target: {fileID: 841428458372907896, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_Name
       value: Light 2D Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -14985,6 +14993,10 @@ PrefabInstance:
     - target: {fileID: 841428458372907896, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_Name
       value: Light 2D Medium (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -16567,7 +16579,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1165959385
 PrefabInstance:
@@ -16579,6 +16591,10 @@ PrefabInstance:
     - target: {fileID: 841428458372907896, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_Name
       value: Light 2D Medium (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -17036,6 +17052,10 @@ PrefabInstance:
       value: Light 2D Medium (3)
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
       value: 0.34559882
       objectReference: {fileID: 0}
@@ -17194,7 +17214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6274072377107442488, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6274072377107442488, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17252,6 +17272,10 @@ PrefabInstance:
     - target: {fileID: 841428458372907896, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_Name
       value: Light 2D Medium (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 841428458372907897, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -17460,7 +17484,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000522129
 GameObject:
@@ -17579,7 +17603,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2000522133
 MonoBehaviour:
@@ -18286,7 +18310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6419685209119021794, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6419685209119021794, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: m_LocalPosition.x
