@@ -11,7 +11,7 @@ public class PickUpScript : MonoBehaviour
     private GameObject Player;
     private bool PickedUp;
     private bool PickUp;
-    private bool Absorbed = false;
+    public bool Absorbed = false;
     private bool Inside = false;
 
     private float time = 6f;
@@ -80,6 +80,10 @@ public class PickUpScript : MonoBehaviour
             }
         }
 
+        if(!Absorbed && !PickedUp)
+        {
+            transform.parent = null;
+        }
         
     }
 
@@ -95,6 +99,8 @@ public class PickUpScript : MonoBehaviour
             {
                 print("Absorb element");
                 Absorbed = true;
+                transform.parent = Player.transform;
+                GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
         }
 
@@ -122,13 +128,15 @@ public class PickUpScript : MonoBehaviour
 
         if (!PickUp)
         {
-            transform.parent = null;
+            
             PickedUp = false;
         }
 
         if (Absorbed && timer < time)
         {
             Absorbed = false;
+            
+            GetComponentInChildren<SpriteRenderer>().enabled = true;
             print("Released");
         }
 

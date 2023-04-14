@@ -13,11 +13,15 @@ public class CharacterInfo : MonoBehaviour
 
     private MouseController mouseController;
 
+    private PickUpScript PickUpScript;
+
     private bool isPlayerDead;
     public int lives = 3;
 
     private Vector2 playerDir;
     public float knockbackMultiplier = 1;
+
+    public bool ElementAbsorbed = false;
 
     private bool startTimer = false;
     private float timer = 0f;
@@ -87,5 +91,16 @@ public class CharacterInfo : MonoBehaviour
             //rb.constraints = RigidbodyConstraints2D.FreezeAll;
             //animator.enabled = true;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<PickUpScript>())
+        {
+            PickUpScript = collision.gameObject.GetComponent<PickUpScript>();
+            ElementAbsorbed = PickUpScript.Absorbed;
+        }
+
+        
     }
 }
