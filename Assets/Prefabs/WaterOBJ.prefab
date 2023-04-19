@@ -140,6 +140,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursor: {fileID: 0}
+  Absorbed: 0
 --- !u!114 &7066131110084473536
 MonoBehaviour:
   m_ObjectHideFlags: 0
