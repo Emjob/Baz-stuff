@@ -5536,6 +5536,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &711259845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6077417321234339534, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+  m_PrefabInstance: {fileID: 718465320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &718465320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6630,6 +6635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6274072377107442486, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 711259845}
     - target: {fileID: 6274072377107442488, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6885,10 +6894,6 @@ PrefabInstance:
     - target: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8949339420437473583, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: m_RootOrder

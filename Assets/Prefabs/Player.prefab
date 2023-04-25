@@ -655,9 +655,10 @@ GameObject:
   - component: {fileID: 8949339420694897066}
   - component: {fileID: 8949339420694897060}
   - component: {fileID: 8949339420694897061}
+  - component: {fileID: 5874757563008467742}
   m_Layer: 0
   m_Name: BazStuffCharacter_0
-  m_TagString: Untagged
+  m_TagString: Animator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,3 +750,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &5874757563008467742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8949339420694897067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6878c29f336c43f43bed5d4a29eeb30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Absorb: 0

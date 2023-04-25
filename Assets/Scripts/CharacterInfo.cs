@@ -98,7 +98,7 @@ public class CharacterInfo : MonoBehaviour
         if (collision.gameObject.GetComponent<PickUpScript>())
         {
             PickUpScript = collision.gameObject.GetComponent<PickUpScript>();
-            ElementAbsorbed = PickUpScript.Absorbed;
+            ElementAbsorbed = PickUpScript.ShouldAbsorb;
         }
 
         

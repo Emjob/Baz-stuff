@@ -10,8 +10,9 @@ public class PickUpScript : MonoBehaviour
     private Vector3 Placement;
     private GameObject Player;
     private bool PickedUp;
-    private bool PickUp;
-    public bool Absorbed = false;
+    [SerializeField] private bool PickUp;
+    public bool ShouldAbsorb = false;
+    [SerializeField] private bool Absorbed = false;
     private bool Inside = false;
 
     private float time = 6f;
@@ -41,6 +42,9 @@ public class PickUpScript : MonoBehaviour
 
     private void Update()
     {
+        //ShouldAbsorb = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
+        Absorbed = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
+
         /*Placement = cursor.transform.position;
 
         if(Input.GetKeyDown(KeyCode.P) && PickedUp)
@@ -84,7 +88,14 @@ public class PickUpScript : MonoBehaviour
         {
             transform.parent = null;
         }
-        
+
+
+        if (Absorbed)
+        {
+            print("Absorb element");
+            transform.parent = Player.transform;
+            GetComponentInChildren<SpriteRenderer>().enabled = false;
+        }
     }
 
     private void MouseDown()
@@ -97,10 +108,9 @@ public class PickUpScript : MonoBehaviour
             }
             if (timer >= time)
             {
-                print("Absorb element");
-                Absorbed = true;
-                transform.parent = Player.transform;
-                GetComponentInChildren<SpriteRenderer>().enabled = false;
+                
+                ShouldAbsorb = true;
+                
             }
         }
 
@@ -109,7 +119,7 @@ public class PickUpScript : MonoBehaviour
 
     private void MouseUp()
     {
-        if (!Absorbed && !PickedUp)
+        if (!Absorbed && !PickedUp && !ShouldAbsorb && !GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb)
         {
             PickUp = true;
         }
@@ -119,7 +129,7 @@ public class PickUpScript : MonoBehaviour
             PickUp = false;
         }
 
-        if (PickUp && !Absorbed)
+        if (PickUp && !Absorbed && !ShouldAbsorb)
         {
             print(Placement.x - transform.position.x);
             transform.parent = Player.transform;
@@ -134,10 +144,13 @@ public class PickUpScript : MonoBehaviour
 
         if (Absorbed && timer < time)
         {
-            Absorbed = false;
+            
+            ShouldAbsorb = false;
+            GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb = false;
             
             GetComponentInChildren<SpriteRenderer>().enabled = true;
             print("Released");
+            Absorbed = false;
         }
 
         timer = 0;
