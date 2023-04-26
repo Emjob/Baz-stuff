@@ -24,6 +24,7 @@ public class PickUpScript : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        Element = gameObject.tag;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,7 +46,7 @@ public class PickUpScript : MonoBehaviour
     private void Update()
     {
         //ShouldAbsorb = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
-        Absorbed = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
+        
 
         /*Placement = cursor.transform.position;
 
@@ -72,9 +73,12 @@ public class PickUpScript : MonoBehaviour
                 transform.Translate(0.08f, 0, 0);
             }
         }*/
+        
 
         if (Inside)
         {
+            Absorbed = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
+
             if (Input.GetKey(KeyCode.Mouse1))
             {
                 MouseDown();
@@ -121,6 +125,7 @@ public class PickUpScript : MonoBehaviour
 
     private void MouseUp()
     {
+        print("Mouse is released");
         if (!Absorbed && !PickedUp && !ShouldAbsorb && !GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb)
         {
             PickUp = true;
