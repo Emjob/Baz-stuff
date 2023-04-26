@@ -5,6 +5,12 @@ public class GraborAbsorb : MonoBehaviour
 {
     public GameObject Message;
 
+    private void Start()
+    {
+        Message = GameObject.FindGameObjectWithTag("Message").GetComponent<GameObject>();
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")

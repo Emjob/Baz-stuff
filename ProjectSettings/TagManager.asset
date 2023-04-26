@@ -12,6 +12,7 @@ TagManager:
   - Steel
   - Grass
   - Animator
+  - Message
   layers:
   - Default
   - TransparentFX
@@ -60,4 +61,7 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 3965839451
+    locked: 0
+  - name: Hearts
+    uniqueID: 3972146513
     locked: 0
