@@ -13792,6 +13792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  currentTile: {fileID: 0}
+  nextTile: {fileID: 0}
 --- !u!60 &1841806436
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15930,30 +15933,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterOBJ
       objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.025
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213055944783512472, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
 --- !u!1001 &7013939057983244858
@@ -15963,34 +15942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.041
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712368488852788666, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7013939057107110131, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
-      propertyPath: m_SortingOrder
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 7013939057330505729, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
       propertyPath: m_Name
       value: GrassOBJ
