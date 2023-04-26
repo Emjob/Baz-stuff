@@ -4564,8 +4564,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 3.3771107, y: -1.0648468}
-      - {x: 2.9199173, y: -1.2789215}
+    - - {x: 3.3675044, y: -1.0373998}
+      - {x: 2.8856087, y: -1.2775491}
       - {x: 3.9071662, y: -1.7831926}
       - {x: 4.3275905, y: -1.555958}
       - {x: 3.4393127, y: -1.10103}
@@ -4581,6 +4581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilemap: {fileID: 435444528}
+  currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
+  nextTile: {fileID: 11400000, guid: 833738e68e0fb6741b8fbe5b7720ba2d, type: 2}
 --- !u!4 &489857027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 841428458372907902, guid: d5ace736c5df9cf49a2a96e8668941e7, type: 3}
@@ -6628,6 +6631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  currentTile: {fileID: 0}
+  nextTile: {fileID: 0}
 --- !u!1001 &1208259761
 PrefabInstance:
   m_ObjectHideFlags: 0
