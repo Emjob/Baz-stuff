@@ -19,6 +19,8 @@ public class PickUpScript : MonoBehaviour
     private float timer = 0;
     //public GameObject UI;
 
+    public string Element;
+
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
