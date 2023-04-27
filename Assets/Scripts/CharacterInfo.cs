@@ -16,7 +16,8 @@ public class CharacterInfo : MonoBehaviour
     private PickUpScript PickUpScript;
 
     private bool isPlayerDead;
-    public int lives = 3;
+    public int lives;
+    public int maxLives = 3;
 
     private Vector2 playerDir;
     public float knockbackMultiplier = 1;
@@ -33,6 +34,7 @@ public class CharacterInfo : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mouseController = GameObject.FindWithTag("Cursor").GetComponent<MouseController>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        lives = maxLives;
     }
 
 
@@ -61,6 +63,7 @@ public class CharacterInfo : MonoBehaviour
             startTimer = false;
             timer = 0f;
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
