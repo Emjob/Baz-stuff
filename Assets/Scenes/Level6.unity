@@ -7081,6 +7081,10 @@ PrefabInstance:
       propertyPath: hearts.Array.data[3]
       value: 
       objectReference: {fileID: 1547241824}
+    - target: {fileID: 6332878766897730988, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7187944afe9257e43a027d25314c9983, type: 3}
     - target: {fileID: 8949339420437473580, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: m_Name
       value: Player
