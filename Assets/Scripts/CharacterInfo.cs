@@ -67,7 +67,7 @@ public class CharacterInfo : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Fire"))
+        if(collision.gameObject.layer == 10)
         {
             if (lives <= 0)
             {

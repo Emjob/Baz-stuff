@@ -4868,7 +4868,7 @@ GameObject:
   - component: {fileID: 435444527}
   - component: {fileID: 435444530}
   - component: {fileID: 435444529}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Lava
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -19689,7 +19689,7 @@ GameObject:
   - component: {fileID: 2024281100}
   - component: {fileID: 2024281103}
   - component: {fileID: 2024281102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lava (1)
   m_TagString: Fire
   m_Icon: {fileID: 0}

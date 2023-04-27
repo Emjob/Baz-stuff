@@ -5418,7 +5418,7 @@ GameObject:
   - component: {fileID: 471510408}
   - component: {fileID: 471510407}
   - component: {fileID: 471510409}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lava
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -7899,7 +7899,7 @@ GameObject:
   - component: {fileID: 1322968292}
   - component: {fileID: 1322968291}
   - component: {fileID: 1322968293}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -8990,7 +8990,7 @@ GameObject:
   - component: {fileID: 1849732117}
   - component: {fileID: 1849732116}
   - component: {fileID: 1849732118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lava2
   m_TagString: Fire
   m_Icon: {fileID: 0}

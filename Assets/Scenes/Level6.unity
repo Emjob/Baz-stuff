@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 213575021}
   - component: {fileID: 213575020}
   - component: {fileID: 213575022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 692816897}
   - component: {fileID: 692816896}
   - component: {fileID: 692816898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lava
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -7772,7 +7772,7 @@ GameObject:
   - component: {fileID: 1951480765}
   - component: {fileID: 1951480764}
   - component: {fileID: 1951480766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
@@ -8189,7 +8189,7 @@ GameObject:
   - component: {fileID: 2078269453}
   - component: {fileID: 2078269452}
   - component: {fileID: 2078269454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Steel
   m_TagString: Steel
   m_Icon: {fileID: 0}

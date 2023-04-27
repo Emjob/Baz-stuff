@@ -11408,7 +11408,7 @@ GameObject:
   - component: {fileID: 1458368603}
   - component: {fileID: 1458368602}
   - component: {fileID: 1458368604}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water2
   m_TagString: Water
   m_Icon: {fileID: 0}
@@ -12285,7 +12285,7 @@ GameObject:
   - component: {fileID: 1759406193}
   - component: {fileID: 1759406192}
   - component: {fileID: 1759406194}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lava
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -13458,7 +13458,7 @@ GameObject:
   - component: {fileID: 1841806433}
   - component: {fileID: 1841806436}
   - component: {fileID: 1841806435}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
