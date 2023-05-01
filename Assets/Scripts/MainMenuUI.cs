@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
@@ -46,8 +47,7 @@ public class MainMenuUI : MonoBehaviour
 
     void OnPlayButtonClicked()
     {
-        // Start the game
-        Debug.Log("Starting the game...");
+        SceneManager.LoadScene("Level1");
     }
 
     void OnExitButtonClicked()
