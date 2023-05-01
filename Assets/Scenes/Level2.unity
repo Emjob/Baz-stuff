@@ -9593,9 +9593,9 @@ GameObject:
   - component: {fileID: 501500404}
   - component: {fileID: 501500406}
   - component: {fileID: 501500405}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19744,9 +19744,9 @@ GameObject:
   - component: {fileID: 1353486538}
   - component: {fileID: 1353486540}
   - component: {fileID: 1353486539}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Water(1)
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20659,7 +20659,7 @@ GameObject:
   - component: {fileID: 1629923589}
   - component: {fileID: 1629923591}
   - component: {fileID: 1629923590}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Collider (1)
   m_TagString: Fire
   m_Icon: {fileID: 0}

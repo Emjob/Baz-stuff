@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 33351583}
   - component: {fileID: 33351585}
   - component: {fileID: 33351584}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Rock3
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -6756,7 +6756,7 @@ GameObject:
   - component: {fileID: 503179333}
   - component: {fileID: 503179335}
   - component: {fileID: 503179334}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Water
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -9250,7 +9250,7 @@ GameObject:
   - component: {fileID: 1173328898}
   - component: {fileID: 1173328900}
   - component: {fileID: 1173328899}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Rock2
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -13076,7 +13076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1882656599457554751, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 2509741710362292525, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
       propertyPath: Message
