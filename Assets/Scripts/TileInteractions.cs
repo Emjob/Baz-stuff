@@ -16,11 +16,16 @@ public class TileInteractions : MonoBehaviour
     {
         tilemap = GetComponent<Tilemap>();
         //
+        nextTile = Resources.Load<Tile>("Rock/RockTile");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            tilemap.SwapTile(currentTile, nextTile);
+        }
         Element = gameObject.tag;
         if (Element == "Ground")
         {
@@ -40,13 +45,13 @@ public class TileInteractions : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PickUpScript>() == null)
         {
-            return;
+            
             if (Element == "Ice")
             {
                 if (collision.gameObject.GetComponent<PickUpScript>().Element == "Fire")
                 {
                     Element = "Ground";
-                    nextTile = Resources.Load<Tile>("Rock/RockPrototypeTiles_1");
+                    nextTile = Resources.Load<Tile>("Rock/RockTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                     //   Destroy(gameObject);
@@ -66,7 +71,7 @@ public class TileInteractions : MonoBehaviour
                 if (collision.gameObject.CompareTag("Ice"))
                 {
                     Element = "Ice";
-                    nextTile = Resources.Load<Tile>("Ice/Ice tilemap_Layout_1");
+                    nextTile = Resources.Load<Tile>("Ice/IceTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                 }
@@ -85,7 +90,7 @@ public class TileInteractions : MonoBehaviour
                 if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water")
                 {
                     Element = "Ground";
-                    nextTile = Resources.Load<Tile>("Rock/RockPrototypeTiles_1");
+                    nextTile = Resources.Load<Tile>("Rock/RockTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                     //   Destroy(gameObject);
@@ -97,12 +102,13 @@ public class TileInteractions : MonoBehaviour
                 if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water")
                 {
                     Element = "Water";
-                    nextTile = Resources.Load<Tile>("Water/Water_Layout_1");
+                    nextTile = Resources.Load<Tile>("Water/WaterTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                     //   Destroy(gameObject);
                 }
             }
+            return;
         }
     }
     
