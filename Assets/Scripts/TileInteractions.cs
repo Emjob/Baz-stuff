@@ -8,24 +8,20 @@ public class TileInteractions : MonoBehaviour
     string Element;
 
     public Tilemap tilemap;
-   public Tile currentTile;
+    public Tile currentTile;
     public Tile nextTile;
 
     // Start is called before the first frame update
     void Start()
     {
         tilemap = GetComponent<Tilemap>();
-        //
-        nextTile = Resources.Load<Tile>("Rock/RockTile");
+      //  nextTile = Resources.Load<Tile>("Rock/RockTile");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            tilemap.SwapTile(currentTile, nextTile);
-        }
+        
         Element = gameObject.tag;
         if (Element == "Ground")
         {
