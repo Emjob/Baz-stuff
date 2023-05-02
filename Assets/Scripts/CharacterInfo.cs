@@ -15,7 +15,7 @@ public class CharacterInfo : MonoBehaviour
 
     private PickUpScript PickUpScript;
 
-    private bool isPlayerDead;
+    public bool isPlayerDead;
     public int lives;
     public int maxLives = 3;
 
@@ -45,6 +45,7 @@ public class CharacterInfo : MonoBehaviour
         if(isPlayerDead)
         {
             Debug.Log("Player has died");
+            //GameObject.FindWithTag("DeathSound").GetComponent<AudioSource>().Play();
             mouseController.gameObject.SetActive(false);
             Destroy(gameObject); // Delete and set up death animation in PlayerAnimator script
             // Death screen/UI enabled goes here or in a seperate UI script that references isPlayerDead bool (or on a behaviour script to play at the end of the death animation)
@@ -75,6 +76,7 @@ public class CharacterInfo : MonoBehaviour
             }
             else
             {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
                 startTimer = true;
                 lives -= 1;
                 spriteRenderer.color = Color.red;

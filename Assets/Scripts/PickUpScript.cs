@@ -138,6 +138,7 @@ public class PickUpScript : MonoBehaviour
 
         if (PickUp && !Absorbed && !ShouldAbsorb)
         {
+            GameObject.FindWithTag("PickSound").GetComponent<AudioSource>().Play();
             print(Placement.x - transform.position.x);
             transform.parent = Player.transform;
             PickedUp = true;

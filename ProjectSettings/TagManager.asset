@@ -13,6 +13,10 @@ TagManager:
   - Grass
   - Animator
   - Message
+  - WalkSound
+  - PickSound
+  - KnockSound
+  - DeathSound
   layers:
   - Default
   - TransparentFX
