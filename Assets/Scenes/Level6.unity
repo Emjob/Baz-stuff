@@ -205,7 +205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &148647715
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: d03d8b626b82673419ea6e2547235f1e, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &240193237
 GameObject:
@@ -1074,7 +1074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &240193238
 Transform:
   m_ObjectHideFlags: 0
@@ -1713,7 +1713,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4751707062829366063, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
 --- !u!4 &644495681 stripped
 Transform:
@@ -2326,7 +2327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
   nextTile: {fileID: 0}
 --- !u!1001 &786205959
 PrefabInstance:
@@ -2513,7 +2514,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2126818537431905910, guid: 6795d7c72728d15408cc2ef5e04a6337, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6795d7c72728d15408cc2ef5e04a6337, type: 3}
 --- !u!4 &1051498197 stripped
 Transform:
@@ -8514,7 +8516,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7066131110084473536, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
 --- !u!4 &1603707698 stripped
 Transform:
@@ -8622,7 +8625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1668907425
 Transform:
   m_ObjectHideFlags: 0
@@ -9500,7 +9503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &2051143577
 GameObject:
@@ -9864,7 +9867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: fe1a303763eba6941989d29084f7f7b5, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &2100716573
 GameObject:
@@ -9883,7 +9886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2100716574
 Transform:
   m_ObjectHideFlags: 0
@@ -10308,5 +10311,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice_Obj
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6274072377107442487, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}

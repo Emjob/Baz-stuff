@@ -2824,7 +2824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: d03d8b626b82673419ea6e2547235f1e, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &1175759774
 GameObject:
@@ -8402,7 +8402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: 833738e68e0fb6741b8fbe5b7720ba2d, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &1846589833
 GameObject:
@@ -8830,7 +8830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &1864096992
 GameObject:
@@ -9696,7 +9696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
   nextTile: {fileID: 0}
 --- !u!1 &2118021596
 GameObject:
@@ -9987,7 +9987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: d03d8b626b82673419ea6e2547235f1e, type: 2}
   nextTile: {fileID: 0}
 --- !u!1001 &9048883288754407366
 PrefabInstance:

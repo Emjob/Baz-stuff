@@ -13739,7 +13739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
   nextTile: {fileID: 0}
 --- !u!1001 &1497829464
 PrefabInstance:
@@ -15209,7 +15209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
   nextTile: {fileID: 0}
 --- !u!1001 &1827893129
 PrefabInstance:
@@ -15892,7 +15892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
+  currentTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
   nextTile: {fileID: 0}
 --- !u!60 &1841806436
 PolygonCollider2D:
@@ -18089,7 +18089,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterOBJ
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7066131110084473536, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09224a8d3fd8dd24fbd8d1fb16da065a, type: 3}
 --- !u!1001 &7013939057983244858
 PrefabInstance:
@@ -18146,5 +18147,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4582865566647653937, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c659b641a6289641b881aa15c5ec9e9, type: 3}

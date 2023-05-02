@@ -3186,7 +3186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &278842140
 Transform:
   m_ObjectHideFlags: 0
@@ -4882,9 +4882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 435444528}
+  tilemap: {fileID: 0}
   currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
-  nextTile: {fileID: 11400000, guid: 833738e68e0fb6741b8fbe5b7720ba2d, type: 2}
+  nextTile: {fileID: 0}
 --- !u!1001 &446722835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7122,7 +7122,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice_Obj
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6274072377107442487, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
 --- !u!1001 &1214052345
 PrefabInstance:

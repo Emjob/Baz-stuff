@@ -5801,9 +5801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 435444528}
+  tilemap: {fileID: 0}
   currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
-  nextTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
+  nextTile: {fileID: 0}
 --- !u!60 &435444530
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20872,7 +20872,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice_Obj
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6274072377107442487, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
 --- !u!1001 &1848197367
 PrefabInstance:
@@ -21870,9 +21871,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 435444528}
+  tilemap: {fileID: 0}
   currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
-  nextTile: {fileID: 11400000, guid: c73eaaa449dfbd042ad1b8d18d95da6a, type: 2}
+  nextTile: {fileID: 0}
 --- !u!60 &2024281103
 PolygonCollider2D:
   m_ObjectHideFlags: 0
