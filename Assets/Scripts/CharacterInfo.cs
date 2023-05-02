@@ -10,6 +10,7 @@ public class CharacterInfo : MonoBehaviour
     private Animator animator;
     public Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private GameObject DeathScreen;
 
     private MouseController mouseController;
 
@@ -35,21 +36,22 @@ public class CharacterInfo : MonoBehaviour
         mouseController = GameObject.FindWithTag("Cursor").GetComponent<MouseController>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         lives = maxLives;
+        DeathScreen = GameObject.FindWithTag("DeathScreen");
     }
 
 
     private void Update()
     {
         playerDir = new Vector2(animator.GetFloat("SlimeX"), animator.GetFloat("SlimeY"));
-
+        print(DeathScreen);
         if(isPlayerDead)
         {
             Debug.Log("Player has died");
-            //GameObject.FindWithTag("DeathSound").GetComponent<AudioSource>().Play();
+            DeathScreen.SetActive(true);
             mouseController.gameObject.SetActive(false);
             Destroy(gameObject); // Delete and set up death animation in PlayerAnimator script
-            // Death screen/UI enabled goes here or in a seperate UI script that references isPlayerDead bool (or on a behaviour script to play at the end of the death animation)
         }
+        else { DeathScreen.SetActive(false); }
 
         if (startTimer)
         {
