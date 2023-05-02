@@ -664,8 +664,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  heartImage: {fileID: 400036267, guid: ca6e9040a5b4d204e824c392f07bfe56, type: 3}
-  blankHeartImage: {fileID: -1643463101, guid: ca6e9040a5b4d204e824c392f07bfe56, type: 3}
+  heartImage: {fileID: 21300000, guid: d8f8189ebcc2c6341bc3f09f41c00147, type: 3}
+  blankHeartImage: {fileID: 21300000, guid: 654a2d48b2d9f1d4db8855326fa04a53, type: 3}
 --- !u!1 &8949339420694897067
 GameObject:
   m_ObjectHideFlags: 0
