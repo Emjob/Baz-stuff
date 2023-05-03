@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4120783046814321195}
   - component: {fileID: 4269040471925759089}
+  - component: {fileID: 4940668649636571354}
   - component: {fileID: 9154513796568859471}
   - component: {fileID: 7245232203623405613}
   - component: {fileID: 4751707062829366063}
   - component: {fileID: 2934975075567451928}
   - component: {fileID: 2509741710362292525}
-  - component: {fileID: 4940668649636571354}
   m_Layer: 0
   m_Name: LavaObj
   m_TagString: Fire
@@ -65,14 +65,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.01773531, y: 0.15850672}
-      - {x: -0.15850654, y: 0.08818817}
-      - {x: -0.15925375, y: -0.087441444}
-      - {x: -0.016988106, y: -0.15850672}
-      - {x: 0.016376585, y: -0.16}
-      - {x: 0.16, y: -0.08760075}
-      - {x: 0.16, y: 0.08834742}
-      - {x: 0.020109743, y: 0.15776008}
+    - - {x: -0.08537589, y: -0.053228244}
+      - {x: -0.17648861, y: -0.10693354}
+      - {x: -0.12731218, y: -0.13151467}
+      - {x: -0.061705753, y: -0.16969386}
+      - {x: -0.022776134, y: -0.18471012}
+      - {x: 0.05443594, y: -0.14428475}
+      - {x: 0.1258479, y: -0.10248266}
+      - {x: -0.030390829, y: -0.017962381}
+--- !u!60 &4940668649636571354
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882656599457554751}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.027915742, y: -0.045577824}
+      - {x: -0.0744839, y: -0.07705635}
+      - {x: -0.12980936, y: -0.11046231}
+      - {x: -0.01936657, y: -0.16960622}
+      - {x: 0.004239982, y: -0.15066415}
+      - {x: 0.051178187, y: -0.12824167}
+      - {x: 0.083313465, y: -0.10744658}
+      - {x: 0.021835828, y: -0.06540394}
 --- !u!50 &9154513796568859471
 Rigidbody2D:
   serializedVersion: 4
@@ -163,36 +196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Message: {fileID: 4315112153287669932, guid: 76c641b25a3e6c748bc8535c9df5b6c6, type: 3}
---- !u!60 &4940668649636571354
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882656599457554751}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
 --- !u!1 &2529685865071073730
 GameObject:
   m_ObjectHideFlags: 0
