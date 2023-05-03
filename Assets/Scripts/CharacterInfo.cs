@@ -24,6 +24,8 @@ public class CharacterInfo : MonoBehaviour
     public float knockbackMultiplier = 1;
 
     public bool ElementAbsorbed = false;
+    public string tileElement;
+    public string playerElement;
 
     private bool startTimer = false;
     private float timer = 0f;
@@ -72,11 +74,144 @@ public class CharacterInfo : MonoBehaviour
     {
         if(collision.gameObject.layer == 10)
         {
+          //  tileElement = collision.gameObject.GetComponent<TileInteractions>().Element;
             if (lives <= 0)
             {
                 isPlayerDead = true;
             }
-            else
+            if (playerElement == "null")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Ice" && tileElement == "Fire")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Ice" && tileElement == "Ground")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Grass" && tileElement == "Fire")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Grass" && tileElement == "Steel")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Water" && tileElement == "Ice")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Water" && tileElement == "Grass")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Fire" && tileElement == "Water")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Fire" && tileElement == "Ground")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Steel" && tileElement == "Fire")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Steel" && tileElement == "Ground")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Ground" && tileElement == "Grass")
+            {
+                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
+                startTimer = true;
+                lives -= 1;
+                spriteRenderer.color = Color.red;
+                mouseController.StopMovement();
+                animator.enabled = false;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.AddForce(playerDir * -1 * knockbackMultiplier);
+            }
+            if (playerElement == "Ground" && tileElement == "Water")
             {
                 GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
                 startTimer = true;

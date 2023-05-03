@@ -93,6 +93,7 @@ public class PickUpScript : MonoBehaviour
         if(!Absorbed && !PickedUp)
         {
             transform.parent = null;
+            GameObject.Find("Player").GetComponent<CharacterInfo>().playerElement = null;
         }
 
 
@@ -100,6 +101,7 @@ public class PickUpScript : MonoBehaviour
         {
             print("Absorb element");
             transform.parent = Player.transform;
+            GameObject.Find("Player").GetComponent<CharacterInfo>().playerElement = Element;
             GetComponentInChildren<SpriteRenderer>().enabled = false;
         }
     }
@@ -140,6 +142,7 @@ public class PickUpScript : MonoBehaviour
         {
             GameObject.FindWithTag("PickSound").GetComponent<AudioSource>().Play();
             print(Placement.x - transform.position.x);
+            GameObject.Find("Player").GetComponent<CharacterInfo>().playerElement = Element;
             transform.parent = Player.transform;
             PickedUp = true;
         }

@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class TileInteractions : MonoBehaviour
 {
-    string Element;
+    public string Element;
 
     public Tilemap tilemap;
     public Tile currentTile;
@@ -39,12 +39,12 @@ public class TileInteractions : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PickUpScript>() == null)
+        if (collision.gameObject.GetComponent<CharacterInfo>() == null)
         {
             
             if (Element == "Ice")
             {
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Fire")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Fire" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
                     Element = "Ground";
                     nextTile = Resources.Load<Tile>("Rock/RockTile");
@@ -52,38 +52,38 @@ public class TileInteractions : MonoBehaviour
                     currentTile = nextTile;
                     //   Destroy(gameObject);
                 }
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Water" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
 
-                    collision.gameObject.GetComponent<PickUpScript>().Element = "Ice";
+                    collision.gameObject.GetComponent<CharacterInfo>().playerElement = "Ice";
                 }
             }
             if (Element == "Water")
             {
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Ground" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
-                    collision.gameObject.GetComponent<PickUpScript>().Element = "Water";
+                    collision.gameObject.GetComponent<CharacterInfo>().playerElement = "Water";
                 }
-                if (collision.gameObject.CompareTag("Ice"))
+                if (collision.gameObject.CompareTag("Ice") || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
                     Element = "Ice";
                     nextTile = Resources.Load<Tile>("Ice/IceTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                 }
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Fire")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Fire" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
-                    collision.gameObject.GetComponent<PickUpScript>().Element = "Water";
+                    collision.gameObject.GetComponent<CharacterInfo>().playerElement = "Water";
                     //   Destroy(gameObject);
                 }
             }
             if (Element == "Fire")
             {
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Ice")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Ice" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
-                    collision.gameObject.GetComponent<PickUpScript>().Element = "Water";
+                    collision.gameObject.GetComponent<CharacterInfo>().playerElement = "Water";
                 }
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water")
+                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water" || collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Ground")
                 {
                     Element = "Ground";
                     nextTile = Resources.Load<Tile>("Rock/RockTile");
@@ -95,13 +95,23 @@ public class TileInteractions : MonoBehaviour
             }
             if (Element == "Ground")
             {
-                if (collision.gameObject.GetComponent<PickUpScript>().Element == "Water")
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Water" || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
                 {
                     Element = "Water";
                     nextTile = Resources.Load<Tile>("Water/WaterTile");
                     tilemap.SwapTile(currentTile, nextTile);
                     currentTile = nextTile;
                     //   Destroy(gameObject);
+                }
+            }
+            if (Element == "Grass")
+            {
+                if(collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Ground"  || collision.gameObject.GetComponent<PickUpScript>().Element == "Ground")
+                {
+                    Element = "Grass";
+                    nextTile = Resources.Load<Tile>("Grass/GrassTile");
+                    tilemap.SwapTile(currentTile, nextTile);
+                    currentTile = nextTile;
                 }
             }
             return;
