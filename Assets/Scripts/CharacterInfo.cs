@@ -79,7 +79,7 @@ public class CharacterInfo : MonoBehaviour
             {
                 isPlayerDead = true;
             }
-            if (playerElement == "null")
+            if (playerElement == null)
             {
                 GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
                 startTimer = true;

@@ -33,6 +33,7 @@ public class PickUpScript : MonoBehaviour
         {
             Inside = true;   
         }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -123,6 +124,10 @@ public class PickUpScript : MonoBehaviour
         }
 
         
+    }
+    public void Destroy()
+    {
+        DestroyImmediate(gameObject);
     }
 
     private void MouseUp()
