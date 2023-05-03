@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4120783046814321195}
   - component: {fileID: 4269040471925759089}
-  - component: {fileID: 1890707594513098100}
   - component: {fileID: 9154513796568859471}
   - component: {fileID: 7245232203623405613}
   - component: {fileID: 4751707062829366063}
   - component: {fileID: 2934975075567451928}
   - component: {fileID: 2509741710362292525}
+  - component: {fileID: 4940668649636571354}
   m_Layer: 0
   m_Name: LavaObj
   m_TagString: Fire
@@ -73,39 +73,6 @@ PolygonCollider2D:
       - {x: 0.16, y: -0.08760075}
       - {x: 0.16, y: 0.08834742}
       - {x: 0.020109743, y: 0.15776008}
---- !u!60 &1890707594513098100
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882656599457554751}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.06328041, y: 0.22794428}
-      - {x: -0.24362388, y: 0.1247735}
-      - {x: -0.24661031, y: -0.10909408}
-      - {x: -0.12002499, y: -0.20106521}
-      - {x: 0.08133373, y: -0.20554504}
-      - {x: 0.24511686, y: -0.14509211}
-      - {x: 0.26154295, y: 0.09805374}
-      - {x: 0.14479837, y: 0.21973124}
 --- !u!50 &9154513796568859471
 Rigidbody2D:
   serializedVersion: 4
@@ -159,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Element: 
   tilemap: {fileID: 0}
   currentTile: {fileID: 0}
   nextTile: {fileID: 0}
@@ -195,6 +163,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Message: {fileID: 4315112153287669932, guid: 76c641b25a3e6c748bc8535c9df5b6c6, type: 3}
+--- !u!60 &4940668649636571354
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882656599457554751}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 1}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.5877852, y: -0.80901706}
+      - {x: 0.58778536, y: -0.80901694}
+      - {x: 0.9510565, y: 0.30901712}
 --- !u!1 &2529685865071073730
 GameObject:
   m_ObjectHideFlags: 0

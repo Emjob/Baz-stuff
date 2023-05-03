@@ -100,9 +100,11 @@ public class PickUpScript : MonoBehaviour
 
         if (Absorbed)
         {
+            print(Element);
+            Player.GetComponent<CharacterInfo>().playerElement = Element;
             print("Absorb element");
             transform.parent = Player.transform;
-            GameObject.Find("Player").GetComponent<CharacterInfo>().playerElement = Element;
+            
             GetComponentInChildren<SpriteRenderer>().enabled = false;
         }
     }
@@ -127,7 +129,11 @@ public class PickUpScript : MonoBehaviour
     }
     public void Destroy()
     {
-        DestroyImmediate(gameObject);
+        if (!Absorbed)
+        {
+            Destroy(gameObject);
+            Debug.Log("AHSFDKJHABSCFIJHBASUYCHB ");
+        }
     }
 
     private void MouseUp()

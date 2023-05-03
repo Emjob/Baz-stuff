@@ -74,7 +74,7 @@ public class CharacterInfo : MonoBehaviour
     {
         if(collision.gameObject.layer == 10)
         {
-          //  tileElement = collision.gameObject.GetComponent<TileInteractions>().Element;
+            tileElement = collision.gameObject.GetComponent<TileInteractions>().Element;
             if (lives <= 0)
             {
                 isPlayerDead = true;
@@ -90,17 +90,7 @@ public class CharacterInfo : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                 rb.AddForce(playerDir * -1 * knockbackMultiplier);
             }
-            if (playerElement == "Ice" && tileElement == "Fire")
-            {
-                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
-                startTimer = true;
-                lives -= 1;
-                spriteRenderer.color = Color.red;
-                mouseController.StopMovement();
-                animator.enabled = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-                rb.AddForce(playerDir * -1 * knockbackMultiplier);
-            }
+            
             if (playerElement == "Ice" && tileElement == "Ground")
             {
                 GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();

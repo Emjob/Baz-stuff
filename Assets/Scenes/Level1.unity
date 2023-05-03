@@ -4882,6 +4882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Element: 
   tilemap: {fileID: 0}
   currentTile: {fileID: 11400000, guid: cb21bf141baa67b44be60a160cc90ffe, type: 2}
   nextTile: {fileID: 0}
@@ -7157,6 +7158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Element: 
   tilemap: {fileID: 0}
   currentTile: {fileID: 0}
   nextTile: {fileID: 0}
@@ -7171,6 +7173,10 @@ PrefabInstance:
       propertyPath: Message
       value: 
       objectReference: {fileID: 932588812}
+    - target: {fileID: 881178277, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6274072377107442486, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
       propertyPath: cursor
       value: 
