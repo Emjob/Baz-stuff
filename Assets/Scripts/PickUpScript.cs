@@ -89,12 +89,19 @@ public class PickUpScript : MonoBehaviour
             {
                 MouseUp();
             }
+            if (!Absorbed && !PickedUp)
+            {
+                print("NULL");
+                
+                Player.GetComponent<CharacterInfo>().playerElement = null;
+            }
         }
 
         if(!Absorbed && !PickedUp)
         {
+            
             transform.parent = null;
-            GameObject.Find("Player").GetComponent<CharacterInfo>().playerElement = null;
+
         }
 
 
