@@ -14,7 +14,7 @@ public class PlayerAnimator : MonoBehaviour
     private CharacterInfo CharacterInfo;
     private bool Absorbed;
     private float timer = 0f;
-    public float time = 2f;
+    public float time = 10f;
 
     private void Start()
     {
@@ -84,6 +84,7 @@ public class PlayerAnimator : MonoBehaviour
 
             lastXPos = transform.position.x;
             lastYPos = transform.position.y;
+            print("AnimateAbsorb:" + Absorbed);
         }
     }
 }

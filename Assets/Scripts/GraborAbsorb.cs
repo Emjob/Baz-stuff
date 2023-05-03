@@ -7,7 +7,7 @@ public class GraborAbsorb : MonoBehaviour
 
     private void Start()
     {
-        Message = GameObject.FindGameObjectWithTag("Message").GetComponent<GameObject>();
+       // Message = GameObject.FindGameObjectWithTag("Message").GetComponent<GameObject>();
         
     }
 

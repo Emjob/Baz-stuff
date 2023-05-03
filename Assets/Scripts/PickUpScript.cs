@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PickUpScript : MonoBehaviour
@@ -9,11 +10,13 @@ public class PickUpScript : MonoBehaviour
     public GameObject cursor;
     private Vector3 Placement;
     private GameObject Player;
+    private Animator animator;
     private bool PickedUp;
     [SerializeField] private bool PickUp;
     public bool ShouldAbsorb = false;
-    [SerializeField] private bool Absorbed = false;
-    private bool Inside = false;
+    [SerializeField] public bool Absorbed = false;
+    [SerializeField]private bool Inside = false;
+    [SerializeField]private bool dontpickup = false;
 
     private float time = 6f;
     private float timer = 0;
@@ -25,6 +28,7 @@ public class PickUpScript : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         Element = gameObject.tag;
+        animator = GameObject.FindWithTag("Animator").GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,13 +45,16 @@ public class PickUpScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Inside = false;
+            dontpickup = false;
         }
     }
 
     private void Update()
     {
+        print(Inside + " ShouldAbsorb: " + ShouldAbsorb + " Absorbed: " + Absorbed);
+
         //ShouldAbsorb = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
-        
+
 
         /*Placement = cursor.transform.position;
 
@@ -74,26 +81,39 @@ public class PickUpScript : MonoBehaviour
                 transform.Translate(0.08f, 0, 0);
             }
         }*/
-        
-
-        if (Inside)
+        if(transform.parent == null)
+        {
+            ShouldAbsorb = false;
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            MouseDown();
+        }
+        if (Inside && !animator.GetBool("IsRunning"))
         {
             Absorbed = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
 
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                MouseDown();
-            }
-
+            
+           /*
             if (Input.GetKeyUp(KeyCode.Mouse1))
             {
                 MouseUp();
-            }
-            if (!Absorbed && !PickedUp)
+            } */
+            if (!Absorbed && !PickedUp && !dontpickup && !Player.GetComponent<CharacterInfo>().HoldingElement)
             {
-                print("NULL");
+                ShouldAbsorb = true;
                 
-                Player.GetComponent<CharacterInfo>().playerElement = null;
+                //Player.GetComponent<CharacterInfo>().playerElement = null;
+            }
+
+            if (Absorbed && !Player.GetComponent<CharacterInfo>().HoldingElement && !dontpickup)
+            {
+                print(Element);
+                Player.GetComponent<CharacterInfo>().playerElement = Element;
+                print("Absorb element");
+                transform.parent = Player.transform;
+                transform.localPosition = new Vector3(0, 0, 0);
+                GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
         }
 
@@ -105,20 +125,13 @@ public class PickUpScript : MonoBehaviour
         }
 
 
-        if (Absorbed)
-        {
-            print(Element);
-            Player.GetComponent<CharacterInfo>().playerElement = Element;
-            print("Absorb element");
-            transform.parent = Player.transform;
-            
-            GetComponentInChildren<SpriteRenderer>().enabled = false;
-        }
+        
     }
 
     private void MouseDown()
     {
-        if (!Absorbed && !PickedUp)
+        print("MouseDown");
+        /*if (!Absorbed && !PickedUp)
         {
             if (timer < time)
             {
@@ -130,9 +143,20 @@ public class PickUpScript : MonoBehaviour
                 ShouldAbsorb = true;
                 
             }
-        }
+        }*/
 
-        
+        if (transform.parent)
+        {
+            dontpickup = true;
+            ShouldAbsorb = false;
+            GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb = false;
+            
+            
+            GetComponentInChildren<SpriteRenderer>().enabled = true;
+            print("Released");
+            Absorbed = false;
+            transform.parent = null;
+        }
     }
     public void Destroy()
     {

@@ -18,6 +18,7 @@ TagManager:
   - KnockSound
   - DeathSound
   - DeathScreen
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Ice_Element
   - TileLayer
   - KnockbackLayer
-  - 
+  - Element
   - 
   - 
   - 

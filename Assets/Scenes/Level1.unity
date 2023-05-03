@@ -6685,6 +6685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice_Obj
       objectReference: {fileID: 0}
+    - target: {fileID: 6274072377107442489, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6274072377107442487, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: db68d9663dea7144fb93b9ec8f48d35f, type: 3}
@@ -6976,8 +6980,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 63429882924173925, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
 --- !u!1 &1618300278
 GameObject:
@@ -12276,7 +12279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2098710045, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3285136216227671363, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
       propertyPath: m_LocalScale.x

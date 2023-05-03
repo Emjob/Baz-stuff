@@ -436,6 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60394a4625c3eb6468c85d155ea11141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerMaterial: {fileID: 2100000, guid: 0e4754bdb1cb2b74a819059d2564972b, type: 2}
+  DefaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   activeTile: {fileID: 0}
   rb: {fileID: 0}
   isPlayerDead: 0
@@ -445,6 +447,7 @@ MonoBehaviour:
   ElementAbsorbed: 0
   tileElement: 
   playerElement: 
+  HoldingElement: 0
   time: 0.1
 --- !u!60 &6485642722455082467
 PolygonCollider2D:
@@ -519,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPos: 0
   yPos: 0
-  time: 2
+  time: 4
 --- !u!114 &1232997794
 MonoBehaviour:
   m_ObjectHideFlags: 0
