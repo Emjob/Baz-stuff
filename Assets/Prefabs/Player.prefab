@@ -443,6 +443,8 @@ MonoBehaviour:
   maxLives: 3
   knockbackMultiplier: 50
   ElementAbsorbed: 0
+  tileElement: 
+  playerElement: 
   time: 0.1
 --- !u!60 &6485642722455082467
 PolygonCollider2D:
@@ -614,7 +616,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 52
   m_Sprite: {fileID: 2109765550, guid: 19f22e00029f36848b83cd46c8f7045a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.023584902, b: 0.29112932, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
