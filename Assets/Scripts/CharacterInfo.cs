@@ -59,6 +59,10 @@ public class CharacterInfo : MonoBehaviour
         {
             timer += Time.deltaTime * 1f;
         }
+        if(!ElementAbsorbed)
+        {
+            playerElement = null;
+        }
 
         if(timer >= time)
         {
