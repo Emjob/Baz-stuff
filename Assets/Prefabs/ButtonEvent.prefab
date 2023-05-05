@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2351344740953188039
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 596037915
   m_SortingLayer: 2
   m_SortingOrder: 66
-  m_Sprite: {fileID: -655716131, guid: e54ca9cc2d63d314a94eb0e84ce2f3e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8c6c7a2cca1a5347ba6cf85fd15e877, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,14 +111,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.017154016, y: 0.119744435}
-      - {x: -0.05974456, y: 0.09838902}
-      - {x: -0.057274543, y: 0.058026835}
-      - {x: -0.019623794, y: 0.03963805}
-      - {x: 0.020738153, y: 0.041490562}
-      - {x: 0.057274662, y: 0.05864434}
-      - {x: 0.060361944, y: 0.09838878}
-      - {x: 0.019865092, y: 0.119744435}
+    - - {x: -0.03136424, y: 0.070798054}
+      - {x: -0.09842797, y: 0.030495755}
+      - {x: -0.099905215, y: -0.0019719154}
+      - {x: -0.028307475, y: -0.039307587}
+      - {x: 0.028632669, y: -0.039034}
+      - {x: 0.10385259, y: 0.0025928468}
+      - {x: 0.09904536, y: 0.029705994}
+      - {x: 0.028291281, y: 0.06947638}
 --- !u!114 &2351344740953188038
 MonoBehaviour:
   m_ObjectHideFlags: 0

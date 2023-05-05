@@ -31441,17 +31441,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2351344740953188032, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d8c6c7a2cca1a5347ba6cf85fd15e877, type: 3}
     - target: {fileID: 2351344740953188034, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
       propertyPath: m_Name
       value: ButtonEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 2351344740953188034, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2351344740953188039, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
       propertyPath: m_RootOrder
