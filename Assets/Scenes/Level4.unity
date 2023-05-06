@@ -5661,6 +5661,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &303146045 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7333949214690250282, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
+  m_PrefabInstance: {fileID: 303146040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &460451365
 GameObject:
   m_ObjectHideFlags: 0
@@ -12703,6 +12708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80db3569bc94664cbde09195f96ff8b, type: 3}
+--- !u!82 &773586704 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8434852555154978372, guid: c80db3569bc94664cbde09195f96ff8b, type: 3}
+  m_PrefabInstance: {fileID: 773586703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &824667787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12710,6 +12720,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: WorldMusic
+      value: 
+      objectReference: {fileID: 773586704}
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: EndGameMusic
+      value: 
+      objectReference: {fileID: 303146045}
     - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 

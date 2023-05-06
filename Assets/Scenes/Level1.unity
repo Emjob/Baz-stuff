@@ -6917,6 +6917,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: WorldMusic
+      value: 
+      objectReference: {fileID: 4008074278109755867}
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: EndGameMusic
+      value: 
+      objectReference: {fileID: 3604106018222588514}
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1409453700}
@@ -12435,6 +12443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
+--- !u!82 &3604106018222588514 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7333949214690250282, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
+  m_PrefabInstance: {fileID: 3604106018222588513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4008074278109755866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12492,6 +12505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1609efcc008164f4cbc6ed2c8e0dd5de, type: 3}
+--- !u!82 &4008074278109755867 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4008074277667297417, guid: 1609efcc008164f4cbc6ed2c8e0dd5de, type: 3}
+  m_PrefabInstance: {fileID: 4008074278109755866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7266222192702092112
 GameObject:
   m_ObjectHideFlags: 0

@@ -4849,6 +4849,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1609efcc008164f4cbc6ed2c8e0dd5de, type: 3}
+--- !u!82 &399568221 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4008074277667297417, guid: 1609efcc008164f4cbc6ed2c8e0dd5de, type: 3}
+  m_PrefabInstance: {fileID: 399568220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &435444525
 GameObject:
   m_ObjectHideFlags: 0
@@ -15285,6 +15290,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: WorldMusic
+      value: 
+      objectReference: {fileID: 399568221}
+    - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
+      propertyPath: EndGameMusic
+      value: 
+      objectReference: {fileID: 6701064275159422100}
     - target: {fileID: 1232997794, guid: 251781f3ca272744d8ccf427c794d687, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
@@ -31754,3 +31767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &6701064275159422100 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7333949214690250282, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
+  m_PrefabInstance: {fileID: 6701064275159422095}
+  m_PrefabAsset: {fileID: 0}
