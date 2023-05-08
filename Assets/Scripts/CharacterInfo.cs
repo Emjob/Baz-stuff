@@ -103,7 +103,7 @@ public class CharacterInfo : MonoBehaviour
         {
             timer += Time.deltaTime * 1f;
         }
-        if(!ElementAbsorbed)
+        if(!HoldingElement)
         {
             playerElement = null;
         }
@@ -138,17 +138,7 @@ public class CharacterInfo : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                 rb.AddForce(playerDir * -1 * knockbackMultiplier);
             }
-            if (playerElement == "Ice" && tileElement == "Fire")
-            {
-                GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();
-                startTimer = true;
-                lives -= 1;
-                spriteRenderer.color = Color.red;
-                mouseController.StopMovement();
-                animator.enabled = false;
-                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-                rb.AddForce(playerDir * -1 * knockbackMultiplier);
-            }
+            
             if (playerElement == "Ice" && tileElement == "Ground")
             {
                 GameObject.FindWithTag("KnockSound").GetComponent<AudioSource>().Play();

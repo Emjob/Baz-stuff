@@ -109,15 +109,20 @@ public class PickUpScript : MonoBehaviour
             if (Absorbed && !Player.GetComponent<CharacterInfo>().HoldingElement && !dontpickup)
             {
                 print(Element);
-                Player.GetComponent<CharacterInfo>().playerElement = Element;
+                
                 print("Absorb element");
                 transform.parent = Player.transform;
                 transform.localPosition = new Vector3(0, 0, 0);
                 GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
+            
+        }
+        if (Absorbed && Inside)
+        {
+            Player.GetComponent<CharacterInfo>().playerElement = Element;
         }
 
-        if(!Absorbed && !PickedUp)
+        if (!Absorbed && !PickedUp)
         {
             
             transform.parent = null;
