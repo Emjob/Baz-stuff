@@ -7,6 +7,7 @@ using UnityEngine;
 public class MouseController : MonoBehaviour
 {
     public Vector3Int spawnGrid;
+    public Vector3Int endGrid;
     public LayerMask TileLayer;
     public GameObject characterPrefab;
     private CharacterInfo character;
@@ -15,11 +16,15 @@ public class MouseController : MonoBehaviour
     private PathFinder pathFinder;
     private List<OverlayTile> path;
 
+    nextScene nextScene;
+
     private void Start()
     {
         pathFinder = new PathFinder();
 
         path = new List<OverlayTile>();
+
+        nextScene = GameObject.FindWithTag("Goal").GetComponent<nextScene>();
     }
 
     private void LateUpdate()
@@ -33,6 +38,15 @@ public class MouseController : MonoBehaviour
             spawnTile.gridLocation = spawnGrid;
             character.activeTile = spawnTile;
         }
+
+        if (nextScene)
+        {
+            if (nextScene.levelCleared)
+            {
+                TeleportOnFinish();
+            }
+        }
+        
 
         if (hit.HasValue)
         {
@@ -104,6 +118,19 @@ public class MouseController : MonoBehaviour
             return hits.OrderByDescending(i => i.collider.transform.position.z).First();
         }
         return null;
+    }
+
+    public void TeleportOnFinish()
+    {
+        GameObject[] overlay = GameObject.FindGameObjectsWithTag("OverlayTile");
+        for (int i = 0; i < overlay.Length; i++)
+        {
+            OverlayTile endTile = overlay[i].GetComponent<OverlayTile>();
+            if (endTile.gridLocation == endGrid)
+            {
+                PositionCharacterOnTile(overlay[i].GetComponent<OverlayTile>());
+            }
+        }
     }
 }
 

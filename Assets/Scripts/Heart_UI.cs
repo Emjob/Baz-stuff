@@ -14,6 +14,9 @@ public class Heart_UI : MonoBehaviour
     public Sprite heartImage;
     public Sprite blankHeartImage;
 
+    public AudioSource WorldMusic;
+    public AudioSource EndGameMusic;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +51,12 @@ public class Heart_UI : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+        }
+
+        if (PlayerInfo.isPlayerDead)
+        {
+            WorldMusic.Stop();
+            EndGameMusic.Play();
         }
 
     }

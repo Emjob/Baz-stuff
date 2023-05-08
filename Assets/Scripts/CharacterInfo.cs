@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CharacterInfo : MonoBehaviour
 {
+    public Material PlayerMaterial;
+    public Material DefaultMaterial;
     public OverlayTile activeTile;
     private Animator animator;
     public Rigidbody2D rb;
@@ -27,9 +30,14 @@ public class CharacterInfo : MonoBehaviour
     public string tileElement;
     public string playerElement;
 
+    public bool HoldingElement = false;
+
     private bool startTimer = false;
     private float timer = 0f;
     public float time = 2f;
+
+    Color Fire;
+    Color Water;
 
     private void Start()
     {
@@ -39,13 +47,49 @@ public class CharacterInfo : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         lives = maxLives;
         DeathScreen = GameObject.FindWithTag("DeathScreen");
+        Fire = new Color32(255, 84, 0, 255);
+        Water = new Color32(21, 196, 253, 255);
     }
 
 
     private void Update()
     {
         playerDir = new Vector2(animator.GetFloat("SlimeX"), animator.GetFloat("SlimeY"));
-        print(DeathScreen);
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if(transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("Element"))
+            {
+                spriteRenderer.material = DefaultMaterial;
+                HoldingElement = true;
+                if (transform.GetChild(i).CompareTag("Ice"))
+                {
+                    spriteRenderer.color = Color.cyan;
+                }
+                if (transform.GetChild(i).CompareTag("Grass"))
+                {
+                    spriteRenderer.color = Color.green;
+                }
+                if (transform.GetChild(i).CompareTag("Fire"))
+                {
+                    spriteRenderer.color = Fire;
+                }
+                if (transform.GetChild(i).CompareTag("Water"))
+                {
+                    spriteRenderer.color = Water;
+                }
+                if (transform.GetChild(i).CompareTag("Rock"))
+                {
+                    spriteRenderer.color = Color.gray;
+                }
+                if (transform.GetChild(i).CompareTag("Steel"))
+                {
+                    spriteRenderer.color = new Color(169, 169, 169);
+                }
+            }
+            else { HoldingElement = false; spriteRenderer.material = PlayerMaterial; spriteRenderer.color = Color.white; }
+        }
+
         if(isPlayerDead)
         {
             Debug.Log("Player has died");
@@ -233,8 +277,12 @@ public class CharacterInfo : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PickUpScript>())
         {
-            PickUpScript = collision.gameObject.GetComponent<PickUpScript>();
+            if (!HoldingElement)
+            {
+                PickUpScript = collision.gameObject.GetComponent<PickUpScript>();
+            }
             ElementAbsorbed = PickUpScript.ShouldAbsorb;
+            
         }
 
         

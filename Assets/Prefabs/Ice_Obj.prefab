@@ -226,12 +226,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6274072377107442488}
   - component: {fileID: 6274072377107442484}
+  - component: {fileID: 881178277}
   - component: {fileID: 6274072377107442485}
   - component: {fileID: 6274072377107442486}
-  - component: {fileID: 6274072377107442487}
   - component: {fileID: 359454048}
-  - component: {fileID: 881178277}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ice_Obj
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -280,14 +279,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.06328041, y: 0.22794428}
-      - {x: -0.24362388, y: 0.1247735}
-      - {x: -0.24661031, y: -0.082443595}
-      - {x: -0.12002499, y: -0.20106521}
-      - {x: 0.08133373, y: -0.20554504}
-      - {x: 0.24511686, y: -0.14509211}
-      - {x: 0.26154295, y: 0.09805374}
-      - {x: 0.14479837, y: 0.21973124}
+    - - {x: -0.126613, y: 0.031209841}
+      - {x: -0.12936041, y: -0.010713525}
+      - {x: -0.123384714, y: -0.033330977}
+      - {x: -0.116688654, y: -0.09703794}
+      - {x: -0.05223132, y: -0.16605517}
+      - {x: 0.03381726, y: -0.08341083}
+      - {x: 0.06890139, y: 0.028101638}
+      - {x: -0.035300106, y: 0.11851294}
+--- !u!60 &881178277
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274072377107442489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.06830427, y: 0.025114477}
+      - {x: -0.032264978, y: 0.12127471}
+      - {x: -0.13177298, y: 0.03288591}
+      - {x: -0.12049586, y: -0.10087766}
+      - {x: -0.04976087, y: -0.16440994}
+      - {x: 0.00012251735, y: -0.119405165}
+      - {x: 0.037167072, y: -0.08290067}
+      - {x: 0.05620005, y: -0.033985138}
 --- !u!50 &6274072377107442485
 Rigidbody2D:
   serializedVersion: 4
@@ -328,22 +360,9 @@ MonoBehaviour:
   PickUp: 0
   ShouldAbsorb: 0
   Absorbed: 0
+  Inside: 0
+  dontpickup: 0
   Element: 
---- !u!114 &6274072377107442487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274072377107442489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
-  currentTile: {fileID: 0}
-  nextTile: {fileID: 0}
 --- !u!114 &359454048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,38 +375,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960b70648359c06499809b130f0e4d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Message: {fileID: 4315112153287669932, guid: 76c641b25a3e6c748bc8535c9df5b6c6, type: 3}
---- !u!60 &881178277
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274072377107442489}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.20655274, y: 0.2817874}
-      - {x: -0.0106601715, y: 0.36038768}
-      - {x: -0.23252463, y: 0.2799629}
-      - {x: -0.3647452, y: 0.07982245}
-      - {x: -0.32640696, y: -0.11614263}
-      - {x: -0.16670722, y: -0.28666693}
-      - {x: 0.20934808, y: -0.29732716}
-      - {x: 0.37125635, y: -0.124684274}
-      - {x: 0.40738606, y: 0.122463524}
+  Message: {fileID: 0}

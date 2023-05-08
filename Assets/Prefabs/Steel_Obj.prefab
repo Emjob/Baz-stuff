@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 756952863688123959}
   - component: {fileID: 2126818537431905910}
   - component: {fileID: -3290951901713792104}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steel_Obj
   m_TagString: Steel
   m_Icon: {fileID: 0}
@@ -154,39 +154,6 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.01773531, y: 0.15850672}
-      - {x: -0.15850654, y: 0.08818817}
-      - {x: -0.15925375, y: -0.087441444}
-      - {x: -0.016988106, y: -0.15850672}
-      - {x: 0.016376585, y: -0.16}
-      - {x: 0.16, y: -0.08760075}
-      - {x: 0.16, y: 0.08834742}
-      - {x: 0.020109743, y: 0.15776008}
---- !u!60 &6100318207507713926
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806128028175920137}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -202,14 +169,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.06328041, y: 0.22794428}
-      - {x: -0.24362388, y: 0.1247735}
-      - {x: -0.24661031, y: -0.10909408}
-      - {x: -0.12002499, y: -0.20106521}
-      - {x: 0.08133373, y: -0.20554504}
-      - {x: 0.24511686, y: -0.14509211}
-      - {x: 0.26154295, y: 0.09805374}
-      - {x: 0.14479837, y: 0.21973124}
+    - - {x: -0.126613, y: 0.031209841}
+      - {x: -0.12936041, y: -0.010713525}
+      - {x: -0.123384714, y: -0.033330977}
+      - {x: -0.116688654, y: -0.09703794}
+      - {x: -0.05223132, y: -0.16605517}
+      - {x: 0.03381726, y: -0.08341083}
+      - {x: 0.06890139, y: 0.028101638}
+      - {x: -0.035300106, y: 0.11851294}
+--- !u!60 &6100318207507713926
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806128028175920137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.06830427, y: 0.025114477}
+      - {x: -0.032264978, y: 0.12127471}
+      - {x: -0.13177298, y: 0.03288591}
+      - {x: -0.12049586, y: -0.10087766}
+      - {x: -0.04976087, y: -0.16440994}
+      - {x: 0.00012251735, y: -0.119405165}
+      - {x: 0.037167072, y: -0.08290067}
+      - {x: 0.05620005, y: -0.033985138}
 --- !u!50 &3506988398487335167
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +250,8 @@ MonoBehaviour:
   PickUp: 0
   ShouldAbsorb: 0
   Absorbed: 0
+  Inside: 0
+  dontpickup: 0
   Element: 
 --- !u!114 &2126818537431905910
 MonoBehaviour:
@@ -263,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b437e08c7589f40957323345bfaf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Element: 
   tilemap: {fileID: 0}
   currentTile: {fileID: 0}
   nextTile: {fileID: 0}
