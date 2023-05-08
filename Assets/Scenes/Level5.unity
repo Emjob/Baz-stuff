@@ -1079,7 +1079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2098710045, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3604106018552193653, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
       propertyPath: m_Name
@@ -3298,6 +3298,14 @@ PrefabInstance:
     - target: {fileID: 6077417321234339534, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: m_Name
       value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.y
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: spawnGrid.x

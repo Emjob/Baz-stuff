@@ -10330,6 +10330,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.y
+      value: -32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
 --- !u!1 &555237554

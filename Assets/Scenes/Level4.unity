@@ -12609,6 +12609,10 @@ PrefabInstance:
       value: Cursor
       objectReference: {fileID: 0}
     - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.x
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: spawnGrid.x
       value: -3
       objectReference: {fileID: 0}

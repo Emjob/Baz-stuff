@@ -19,6 +19,8 @@ TagManager:
   - DeathSound
   - DeathScreen
   - Rock
+  - Goal
+  - OverlayTile
   layers:
   - Default
   - TransparentFX

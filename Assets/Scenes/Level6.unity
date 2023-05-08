@@ -179,6 +179,10 @@ PrefabInstance:
       value: Cursor
       objectReference: {fileID: 0}
     - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+      propertyPath: endGrid.y
+      value: -21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
       propertyPath: spawnGrid.x
       value: 14
       objectReference: {fileID: 0}
@@ -5904,6 +5908,17 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 8434852555154978372, guid: c80db3569bc94664cbde09195f96ff8b, type: 3}
   m_PrefabInstance: {fileID: 786205959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &857776008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6077417321234339535, guid: 138815dc32cf450449b473f9c5a7bd22, type: 3}
+  m_PrefabInstance: {fileID: 114932822}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48649363f5cc4024bb40dbcf10c87b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &872979430
 GameObject:
   m_ObjectHideFlags: 0
@@ -9681,7 +9696,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -9689,6 +9704,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
@@ -9704,11 +9723,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 872979431}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 857776008}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
@@ -9724,12 +9751,20 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: TeleportOnFinish
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: MouseController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
@@ -9740,6 +9775,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -9747,9 +9786,17 @@ PrefabInstance:
       propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5441579598638310710, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6419685209119021792, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: m_Name
       value: GoalUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419685209119021792, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
+      propertyPath: m_TagString
+      value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 6419685209119021793, guid: a0e26730dc2c8e2448cdf2fea449c6d3, type: 3}
       propertyPath: m_Sprite

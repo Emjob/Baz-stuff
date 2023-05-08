@@ -9,11 +9,14 @@ public class nextScene : MonoBehaviour
 {
     bool timer = false;
     float time = 0f;
+    Animator animator;
+
+    public bool levelCleared = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GameObject.FindWithTag("Animator").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,7 +26,7 @@ public class nextScene : MonoBehaviour
         {
             time += Time.deltaTime;
         }
-        if(time >= 1f)
+        if(time >= 1.533f)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
@@ -33,6 +36,8 @@ public class nextScene : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            levelCleared = true;
+            animator.SetBool("TP", true);
             GetComponent<AudioSource>().Play();
             timer = true;
             
