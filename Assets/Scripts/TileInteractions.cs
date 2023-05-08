@@ -73,8 +73,16 @@ public class TileInteractions : MonoBehaviour
             }
             if (Element == "Fire")
             {
+                if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Ice")
+                {
+                    print("Water");
+                    Element = "Water";
+                    nextTile = Resources.Load<Tile>("Water/WaterTile");
+                    tilemap.SwapTile(currentTile, nextTile);
+                    currentTile = nextTile;
+                    //   Destroy(gameObject);
+                }
 
-               
                 if (collision.gameObject.GetComponent<CharacterInfo>().playerElement == "Water")
                 {
                     print("Ground");
