@@ -1288,6 +1288,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonEvent (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1097886156}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: disableTilemap2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MapManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1686178172}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Tilemaps.Tilemap, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2351344740953188039, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6794,7 +6826,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 930d792d14650ec469db70a1977c7373, type: 3}
     - target: {fileID: 7333949214690250282, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8c054890e8e2f54b99886c8f708dca4, type: 3}
@@ -11308,6 +11340,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1097886156}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: disableTilemap1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MapManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 796093039}
+    - target: {fileID: 7995903103069206935, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Tilemaps.Tilemap, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4856721bffbeb847a565811ec6e23cc, type: 3}
 --- !u!1001 &844462368
@@ -15399,7 +15463,11 @@ MonoBehaviour:
   overlayContainer: {fileID: 1296783745}
   tileMap: {fileID: 870697541}
   tileMap1: {fileID: 1759406193}
-  activateTilemap: 0
+  tileMap2: {fileID: 0}
+  tileMap3: {fileID: 0}
+  activateTilemap1: 0
+  activateTilemap2: 0
+  activateTilemap3: 0
 --- !u!1 &1120676166
 GameObject:
   m_ObjectHideFlags: 0
@@ -18744,6 +18812,38 @@ PrefabInstance:
     - target: {fileID: 2351344740953188034, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
       propertyPath: m_Name
       value: ButtonEvent (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1097886156}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: disableTilemap
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MapManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1120676169}
+    - target: {fileID: 2351344740953188038, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
+      propertyPath: onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Tilemaps.Tilemap, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2351344740953188039, guid: bdde8802229af314487feb9e2170cf6e, type: 3}
       propertyPath: m_RootOrder
