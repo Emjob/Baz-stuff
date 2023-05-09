@@ -122,9 +122,10 @@ GameObject:
   - component: {fileID: 2108346318402879809}
   - component: {fileID: 319420135224126913}
   - component: {fileID: 781186288106637442}
-  m_Layer: 0
+  - component: {fileID: 7995903103069206935}
+  m_Layer: 12
   m_Name: Diamond
-  m_TagString: Untagged
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,9 +184,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 596037915
-  m_SortingLayer: 2
-  m_SortingOrder: 14
+  m_SortingLayerID: 1559197037
+  m_SortingLayer: 3
+  m_SortingOrder: 50
   m_Sprite: {fileID: 454044507, guid: 1937a7a3538b75744b7129d7da67ddde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -231,3 +232,17 @@ PolygonCollider2D:
       - {x: 0.007549582, y: -0.08791131}
       - {x: 0.047549583, y: -0.006324377}
       - {x: 0.047549583, y: 0.017409569}
+--- !u!114 &7995903103069206935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941575665318763762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d12d2382fd15a4e83de986fc94dd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localPos: {x: 0, y: 0.1, z: 0}
+  slotted: {fileID: -1975798765, guid: 1937a7a3538b75744b7129d7da67ddde, type: 3}

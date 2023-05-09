@@ -21,6 +21,12 @@ TagManager:
   - Rock
   - Goal
   - OverlayTile
+  - Diamond
+  - Orb
+  - Square
+  - DiaHole
+  - SquHole
+  - OrbHole
   layers:
   - Default
   - TransparentFX
@@ -34,7 +40,7 @@ TagManager:
   - TileLayer
   - KnockbackLayer
   - Element
-  - 
+  - Object
   - 
   - 
   - 

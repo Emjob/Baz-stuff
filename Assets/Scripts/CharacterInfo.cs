@@ -32,6 +32,8 @@ public class CharacterInfo : MonoBehaviour
 
     public bool HoldingElement = false;
 
+    public bool HoldingObject = false;
+
     private bool startTimer = false;
     private float timer = 0f;
     public float time = 2f;
@@ -56,41 +58,45 @@ public class CharacterInfo : MonoBehaviour
     {
         playerDir = new Vector2(animator.GetFloat("SlimeX"), animator.GetFloat("SlimeY"));
 
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            if(transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("Element"))
+            for (int i = 0; i < transform.childCount; i++)
             {
-                spriteRenderer.material = DefaultMaterial;
-                HoldingElement = true;
-                if (transform.GetChild(i).CompareTag("Ice"))
-                {
-                    spriteRenderer.color = Color.cyan;
-                }
-                if (transform.GetChild(i).CompareTag("Grass"))
-                {
-                    spriteRenderer.color = Color.green;
-                }
-                if (transform.GetChild(i).CompareTag("Fire"))
-                {
-                    spriteRenderer.color = Fire;
-                }
-                if (transform.GetChild(i).CompareTag("Water"))
-                {
-                    spriteRenderer.color = Water;
-                }
-                if (transform.GetChild(i).CompareTag("Rock"))
-                {
-                    spriteRenderer.color = Color.gray;
-                }
-                if (transform.GetChild(i).CompareTag("Steel"))
-                {
-                    spriteRenderer.color = new Color(169, 169, 169);
-                }
-            }
-            else { HoldingElement = false; spriteRenderer.material = PlayerMaterial; spriteRenderer.color = Color.white; }
-        }
 
-        if(isPlayerDead)
+            if (transform.GetChild(i).gameObject.layer != LayerMask.NameToLayer("Object"))
+            {
+                if (transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("Element"))
+                {
+                    spriteRenderer.material = DefaultMaterial;
+                    HoldingElement = true;
+                    if (transform.GetChild(i).CompareTag("Ice"))
+                    {
+                        spriteRenderer.color = Color.cyan;
+                    }
+                    if (transform.GetChild(i).CompareTag("Grass"))
+                    {
+                        spriteRenderer.color = Color.green;
+                    }
+                    if (transform.GetChild(i).CompareTag("Fire"))
+                    {
+                        spriteRenderer.color = Fire;
+                    }
+                    if (transform.GetChild(i).CompareTag("Water"))
+                    {
+                        spriteRenderer.color = Water;
+                    }
+                    if (transform.GetChild(i).CompareTag("Rock"))
+                    {
+                        spriteRenderer.color = Color.gray;
+                    }
+                    if (transform.GetChild(i).CompareTag("Steel"))
+                    {
+                        spriteRenderer.color = new Color(169, 169, 169);
+                    }
+                }
+                else { HoldingElement = false; spriteRenderer.material = PlayerMaterial; spriteRenderer.color = Color.white; }
+            }
+            }
+
+        if (isPlayerDead)
         {
             Debug.Log("Player has died");
             DeathScreen.SetActive(true);
