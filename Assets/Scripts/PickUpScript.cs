@@ -18,6 +18,8 @@ public class PickUpScript : MonoBehaviour
     [SerializeField]private bool Inside = false;
     [SerializeField]private bool dontpickup = false;
 
+    private bool droppable = true;
+
     private float time = 6f;
     private float timer = 0;
     //public GameObject UI;
@@ -38,6 +40,10 @@ public class PickUpScript : MonoBehaviour
             Inside = true;   
         }
         
+        if(collision.gameObject.layer == LayerMask.NameToLayer("KnockbackLayer") || collision.gameObject.layer == LayerMask.NameToLayer("Element"))
+        {
+            droppable = false;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -46,6 +52,11 @@ public class PickUpScript : MonoBehaviour
         {
             Inside = false;
             dontpickup = false;
+        }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("KnockbackLayer") || collision.gameObject.layer == LayerMask.NameToLayer("Element"))
+        {
+            droppable = true;
         }
     }
 
@@ -150,17 +161,23 @@ public class PickUpScript : MonoBehaviour
             }
         }*/
 
+        
+
         if (transform.parent)
         {
-            dontpickup = true;
-            ShouldAbsorb = false;
-            GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb = false;
-            
-            
-            GetComponentInChildren<SpriteRenderer>().enabled = true;
-            print("Released");
-            Absorbed = false;
-            transform.parent = null;
+            if (droppable)
+            {
+                dontpickup = true;
+                ShouldAbsorb = false;
+                GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb = false;
+
+
+                GetComponentInChildren<SpriteRenderer>().enabled = true;
+                print("Released");
+                Absorbed = false;
+                transform.parent = null;
+            }
+            else { Player.GetComponent<AudioSource>().Play(); }
         }
     }
     public void Destroy()

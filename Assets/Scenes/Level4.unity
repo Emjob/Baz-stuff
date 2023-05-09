@@ -25835,7 +25835,7 @@ GameObject:
   - component: {fileID: 2126659166}
   - component: {fileID: 2126659165}
   - component: {fileID: 2126659168}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26659,7 +26659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1882656599457554751, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1882656599457554751, guid: 5f2ba15def279b04b95ee34dbeaeefdc, type: 3}
       propertyPath: m_TagString

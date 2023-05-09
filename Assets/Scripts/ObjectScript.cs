@@ -32,6 +32,11 @@ public class ObjectScript : MonoBehaviour
             transform.parent = null;
         }
 
+        if(isHeld && Input.GetKeyDown(KeyCode.Space) && !canDrop)
+        {
+            charInfo.gameObject.GetComponent<AudioSource>().Play();
+        }
+
         print(justDropped);
     }
 
