@@ -18,10 +18,13 @@ public class MapManager : MonoBehaviour
     public Tilemap tileMap1;
     public Tilemap tileMap2;
     public Tilemap tileMap3;
+    public Tilemap tileMap4;
 
     public bool activateTilemap1;
     public bool activateTilemap2;
     public bool activateTilemap3;
+    public bool activateTilemap4;
+    public bool activateTilemap5;
     private void Awake()
     {
         if(instance != null && instance != this)
@@ -78,6 +81,10 @@ public class MapManager : MonoBehaviour
         if (activateTilemap3)
         {
             disableTilemap2(tileMap3);
+        }
+        if (activateTilemap4)
+        {
+            disableTilemap3(tileMap4);
         }
     }
 
@@ -176,4 +183,37 @@ public class MapManager : MonoBehaviour
             }
         }
     }
+
+    public void disableTilemap3(Tilemap tileMap)
+    {
+        //activateTilemap4 = false;
+
+        tileMap.gameObject.SetActive(true);
+
+        BoundsInt bounds = tileMap.cellBounds;
+
+        for (int z = bounds.max.z; z >= bounds.min.z; z--)
+        {
+            for (int y = bounds.min.y; y < bounds.max.y; y++)
+            {
+                for (int x = bounds.min.x; x < bounds.max.x; x++)
+                {
+                    var tileLocation = new Vector3Int(x, y, z);
+                    var tileKey = new Vector2Int(x, y);
+
+                    if (tileMap.HasTile(tileLocation) && !map.ContainsKey(tileKey))
+                    {
+                        var overlayTile = Instantiate(overlayTilePrefab, overlayContainer.transform);
+                        var cellWorldPosition = tileMap.GetCellCenterWorld(tileLocation);
+
+                        overlayTile.transform.position = new Vector3(cellWorldPosition.x, cellWorldPosition.y - 0.09f, cellWorldPosition.z + 1);
+                        overlayTile.GetComponent<SpriteRenderer>().sortingOrder = tileMap.GetComponent<TilemapRenderer>().sortingOrder + 1;
+                        overlayTile.gridLocation = tileLocation;
+                        map.Add(tileKey, overlayTile);
+                    }
+                }
+            }
+        }
+    }
 }
+

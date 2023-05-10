@@ -100,7 +100,7 @@ public class PickUpScript : MonoBehaviour
         {
             MouseDown();
         }
-        if (Inside && !animator.GetBool("IsRunning"))
+        if (Inside && !animator.GetBool("isRunning"))
         {
             Absorbed = GameObject.FindWithTag("Animator").GetComponent<AnimationScript>().Absorb;
 
