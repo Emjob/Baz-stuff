@@ -15465,9 +15465,12 @@ MonoBehaviour:
   tileMap1: {fileID: 1759406193}
   tileMap2: {fileID: 0}
   tileMap3: {fileID: 0}
+  tileMap4: {fileID: 0}
   activateTilemap1: 0
   activateTilemap2: 0
   activateTilemap3: 0
+  activateTilemap4: 0
+  activateTilemap5: 0
 --- !u!1 &1120676166
 GameObject:
   m_ObjectHideFlags: 0
@@ -24457,8 +24460,8 @@ PolygonCollider2D:
     - - {x: -1.1231205, y: 0.38748428}
       - {x: -1.6111805, y: 0.15292297}
       - {x: -0.70859915, y: -0.29838395}
-      - {x: 0.053925514, y: -0.6994529}
-      - {x: 0.55274355, y: -0.44391364}
+      - {x: -0.30872867, y: -0.47279397}
+      - {x: 0.16742349, y: -0.24747598}
 --- !u!1001 &1848359566
 PrefabInstance:
   m_ObjectHideFlags: 0
