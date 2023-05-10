@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,7 +15,6 @@ public class CharacterInfo : MonoBehaviour
     private GameObject DeathScreen;
 
     private MouseController mouseController;
-
     private PickUpScript PickUpScript;
 
     public bool isPlayerDead;
